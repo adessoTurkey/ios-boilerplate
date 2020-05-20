@@ -15,6 +15,7 @@
 		334D49CC246ED2A50057C9F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 334D49CA246ED2A50057C9F3 /* LaunchScreen.storyboard */; };
 		334D49D7246ED2A50057C9F3 /* ios_boilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D49D6246ED2A50057C9F3 /* ios_boilerplateTests.swift */; };
 		334D49E2246ED2A50057C9F3 /* ios_boilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D49E1246ED2A50057C9F3 /* ios_boilerplateUITests.swift */; };
+		334D4AA72472C50F0057C9F3 /* AdessoNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 334D4AA62472C50F0057C9F3 /* AdessoNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		334D49DD246ED2A50057C9F3 /* ios-boilerplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-boilerplateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		334D49E1246ED2A50057C9F3 /* ios_boilerplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_boilerplateUITests.swift; sourceTree = "<group>"; };
 		334D49E3246ED2A50057C9F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		334D4AA62472C50F0057C9F3 /* AdessoNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AdessoNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				334D4AA72472C50F0057C9F3 /* AdessoNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				334D49D5246ED2A50057C9F3 /* ios-boilerplateTests */,
 				334D49E0246ED2A50057C9F3 /* ios-boilerplateUITests */,
 				334D49BD246ED2A40057C9F3 /* Products */,
+				334D4AA52472C50F0057C9F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +130,14 @@
 				334D49E3246ED2A50057C9F3 /* Info.plist */,
 			);
 			path = "ios-boilerplateUITests";
+			sourceTree = "<group>";
+		};
+		334D4AA52472C50F0057C9F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				334D4AA62472C50F0057C9F3 /* AdessoNetwork.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
