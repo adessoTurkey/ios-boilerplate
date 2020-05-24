@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:ios-boilerplate.xcodeproj">
+      location = "group:ios-boilerplate.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:modules/AdessoNetwork/AdessoNetwork.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/AdessoNetwork/AdessoNetwork.xcodeproj">
    </FileRef>
 </Workspace>

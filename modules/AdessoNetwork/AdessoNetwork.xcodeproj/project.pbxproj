@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		331D9715247A98AB00533F12 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331D9714247A98AB00533F12 /* BaseService.swift */; };
 		334D4A932472C3EB0057C9F3 /* AdessoNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 334D4A892472C3EB0057C9F3 /* AdessoNetwork.framework */; };
 		334D4A982472C3EB0057C9F3 /* AdessoNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D4A972472C3EB0057C9F3 /* AdessoNetworkTests.swift */; };
 		334D4A9A2472C3EB0057C9F3 /* AdessoNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 334D4A8C2472C3EB0057C9F3 /* AdessoNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33EEC512247563F200FD32D1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33EEC511247563F200FD32D1 /* Alamofire.framework */; };
-		33EEC5152475658800FD32D1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33EEC5142475658800FD32D1 /* RxSwift.framework */; };
+		D1B6C015011F2A64FC8DF1B0 /* Pods_AdessoNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFD35EB8510EE614FB8CF269 /* Pods_AdessoNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +25,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DA4DFF475998586FA2A380E /* Pods-ios-boilerplate-AdessoNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate-AdessoNetwork.debug.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate-AdessoNetwork/Pods-ios-boilerplate-AdessoNetwork.debug.xcconfig"; sourceTree = "<group>"; };
+		2E2B48503E670E6CF7CACB7D /* Pods-AdessoNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdessoNetwork.release.xcconfig"; path = "Target Support Files/Pods-AdessoNetwork/Pods-AdessoNetwork.release.xcconfig"; sourceTree = "<group>"; };
+		331D9714247A98AB00533F12 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		334D4A892472C3EB0057C9F3 /* AdessoNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdessoNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		334D4A8C2472C3EB0057C9F3 /* AdessoNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdessoNetwork.h; sourceTree = "<group>"; };
 		334D4A8D2472C3EB0057C9F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +36,9 @@
 		334D4A992472C3EB0057C9F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33EEC511247563F200FD32D1 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../../Frameworks/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		33EEC5142475658800FD32D1 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../../Frameworks/Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		4DDD40882757D3734CB4A197 /* Pods-ios-boilerplate-AdessoNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate-AdessoNetwork.release.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate-AdessoNetwork/Pods-ios-boilerplate-AdessoNetwork.release.xcconfig"; sourceTree = "<group>"; };
+		AFD35EB8510EE614FB8CF269 /* Pods_AdessoNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdessoNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCBA0ED3265FB4D8699516EC /* Pods-AdessoNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdessoNetwork.debug.xcconfig"; path = "Target Support Files/Pods-AdessoNetwork/Pods-AdessoNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,8 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33EEC5152475658800FD32D1 /* RxSwift.framework in Frameworks */,
-				33EEC512247563F200FD32D1 /* Alamofire.framework in Frameworks */,
+				D1B6C015011F2A64FC8DF1B0 /* Pods_AdessoNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,11 +61,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		331D970E247A97E100533F12 /* AdessoService */ = {
+			isa = PBXGroup;
+			children = (
+				331D971A247ABED800533F12 /* Response */,
+				331D970F247A984D00533F12 /* BaseService */,
+			);
+			path = AdessoService;
+			sourceTree = "<group>";
+		};
+		331D970F247A984D00533F12 /* BaseService */ = {
+			isa = PBXGroup;
+			children = (
+				331D9714247A98AB00533F12 /* BaseService.swift */,
+			);
+			path = BaseService;
+			sourceTree = "<group>";
+		};
+		331D971A247ABED800533F12 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		332557CF24754F5700AFC066 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				33EEC5142475658800FD32D1 /* RxSwift.framework */,
 				33EEC511247563F200FD32D1 /* Alamofire.framework */,
+				AFD35EB8510EE614FB8CF269 /* Pods_AdessoNetwork.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -72,6 +102,7 @@
 				334D4A962472C3EB0057C9F3 /* AdessoNetworkTests */,
 				334D4A8A2472C3EB0057C9F3 /* Products */,
 				332557CF24754F5700AFC066 /* Frameworks */,
+				6F48DD50DDA69F7A9649710D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +118,7 @@
 		334D4A8B2472C3EB0057C9F3 /* AdessoNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				331D970E247A97E100533F12 /* AdessoService */,
 				334D4A8C2472C3EB0057C9F3 /* AdessoNetwork.h */,
 				334D4A8D2472C3EB0057C9F3 /* Info.plist */,
 			);
@@ -100,6 +132,18 @@
 				334D4A992472C3EB0057C9F3 /* Info.plist */,
 			);
 			path = AdessoNetworkTests;
+			sourceTree = "<group>";
+		};
+		6F48DD50DDA69F7A9649710D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCBA0ED3265FB4D8699516EC /* Pods-AdessoNetwork.debug.xcconfig */,
+				2E2B48503E670E6CF7CACB7D /* Pods-AdessoNetwork.release.xcconfig */,
+				0DA4DFF475998586FA2A380E /* Pods-ios-boilerplate-AdessoNetwork.debug.xcconfig */,
+				4DDD40882757D3734CB4A197 /* Pods-ios-boilerplate-AdessoNetwork.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +164,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 334D4A9D2472C3EB0057C9F3 /* Build configuration list for PBXNativeTarget "AdessoNetwork" */;
 			buildPhases = (
+				757D1E09A9AE4D6DA9854075 /* [CP] Check Pods Manifest.lock */,
 				334D4A842472C3EB0057C9F3 /* Headers */,
 				334D4A852472C3EB0057C9F3 /* Sources */,
 				334D4A862472C3EB0057C9F3 /* Frameworks */,
@@ -160,7 +205,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
-				ORGANIZATIONNAME = com.adesso.turkey;
+				ORGANIZATIONNAME = "adesso Turkey";
 				TargetAttributes = {
 					334D4A882472C3EB0057C9F3 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -207,11 +252,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		757D1E09A9AE4D6DA9854075 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdessoNetwork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		334D4A852472C3EB0057C9F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				331D9715247A98AB00533F12 /* BaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +309,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CARTHAGE = "$(FRAMEWORKS)/Carthage/Build/iOS";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -272,12 +342,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORKS = "$(WORKSPACEROOT)/../Frameworks";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(CARTHAGE)",
-					"$(BUILT_PRODUCTS_DIR)",
-					"$(FRAMEWORKS)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -292,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -301,7 +366,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WORKSPACEROOT = "${SRCROOT}/..";
 			};
 			name = Debug;
 		};
@@ -309,7 +373,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CARTHAGE = "$(FRAMEWORKS)/Carthage/Build/iOS";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -343,12 +406,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORKS = "$(WORKSPACEROOT)/../Frameworks";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(CARTHAGE)",
-					"$(BUILT_PRODUCTS_DIR)",
-					"$(FRAMEWORKS)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -357,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -366,78 +424,66 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WORKSPACEROOT = "${SRCROOT}/..";
 			};
 			name = Release;
 		};
 		334D4A9E2472C3EB0057C9F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCBA0ED3265FB4D8699516EC /* Pods-AdessoNetwork.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
-				CARTHAGE = "$(FRAMEWORKS)/Carthage/Build/iOS";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORKS = "$(WORKSPACEROOT)/../Frameworks";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = AdessoNetwork/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adesso.AdessoNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WORKSPACEROOT = "${SRCROOT}/..";
 			};
 			name = Debug;
 		};
 		334D4A9F2472C3EB0057C9F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E2B48503E670E6CF7CACB7D /* Pods-AdessoNetwork.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
-				CARTHAGE = "$(FRAMEWORKS)/Carthage/Build/iOS";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORKS = "$(WORKSPACEROOT)/../Frameworks";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = AdessoNetwork/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adesso.AdessoNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WORKSPACEROOT = "${SRCROOT}/..";
 			};
 			name = Release;
 		};
 		334D4AA12472C3EB0057C9F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AdessoNetworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -455,6 +501,7 @@
 		334D4AA22472C3EB0057C9F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AdessoNetworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
