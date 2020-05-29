@@ -3,7 +3,7 @@
 //  ios-boilerplate
 //
 //  Created by Firat Yenidunya on 15.05.2020.
-//  Copyright © 2020 com.adesso.turkey. All rights reserved.
+//  Copyright © 2020 adesso Turkey. All rights reserved.
 //
 
 import UIKit
