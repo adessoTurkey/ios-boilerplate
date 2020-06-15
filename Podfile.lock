@@ -3,23 +3,27 @@ PODS:
   - CodableAlamofire (1.2.1):
     - Alamofire (~> 5.1.0)
   - RxSwift (5.1.1)
+  - SwiftLint (0.39.2)
 
 DEPENDENCIES:
   - Alamofire (~> 5.1.0)
   - CodableAlamofire
   - RxSwift
+  - SwiftLint
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - CodableAlamofire
     - RxSwift
+    - SwiftLint
 
 SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
   CodableAlamofire: 3532ececac18593b300d775f2a51feca2f83a2f1
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
 
-PODFILE CHECKSUM: 8b5900d301696bd379c19f11e284974ec5fbac22
+PODFILE CHECKSUM: ade9c6ae3461460361fdb04bfef55829e917f9e2
 
 COCOAPODS: 1.9.3

@@ -10,12 +10,14 @@ def ios_boilerplate_pods
   pod 'Alamofire' , '~> 5.1.0'
   pod 'CodableAlamofire'
   pod 'RxSwift'
+  pod 'SwiftLint'
 end
 
 def adesso_newtwork_pods
   pod 'Alamofire' , '~> 5.1.0'
   pod 'CodableAlamofire'
   pod 'RxSwift'
+  pod 'SwiftLint'
 end
 
 target 'ios-boilerplate' do

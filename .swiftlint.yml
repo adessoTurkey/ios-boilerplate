@@ -1,0 +1,30 @@
+excluded:
+  - Pods
+
+disabled_rules:
+  - trailing_whitespace
+  - type_name
+
+line_length: 200
+
+custom_rules:
+  empty_first_line:
+    name: "Empty First Line"
+    regex: "(^[ a-zA-Z ]*(?:protocol|extension|class|struct) (?!(?:var|let))[ a-zA-Z:]*\\{\n *\\S+)"
+    message: "There should be an empty line after a declaration"
+    severity: warning
+  empty_line_after_guard:
+    name: "Empty Line After Guard"
+    regex: "(^ *guard[ a-zA-Z0-9=?.\\(\\),><!]*\\{[ a-zA-Z0-9=?.\\(\\),><!]*\\}\\n *(?!(?:return|guard))\\S+)"
+    message: "There should be an empty line after a guard"
+    severity: warning
+  empty_line_after_super:
+    name: "Empty Line After Super"
+    regex: "(^ *super\\.[ a-zA-Z0-9=?.\\(\\)\\{\\}:,><!]*\\n *(?!(?:\\}|return))\\S+)"
+    message: "There should be an empty line after super"
+    severity: warning
+  empty_line_after_mark:
+    name: "Empty Line After Mark"
+    regex: "(^ *\\/\\/MARK\\:[ a-zA-Z0-9=?.\\(\\)\\{\\}:,><!]*\\n *(?!(?:\\}|return))\\S+)"
+    message: "There should be an empty line after mark"
+    severity: warning
