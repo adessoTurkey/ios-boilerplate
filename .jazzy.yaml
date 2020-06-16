@@ -10,11 +10,12 @@ xcodebuild_arguments:
   - "CODE_SIGNING_ALLOWED=NO"
 author: adesso Turkey
 author_url: https://github.com/adessoTurkey
-module: ios-boilerplate
+module: ios_boilerplate
 exclude: 
     - "**/AppDelegate.swift"
     - "**/SceneDelegate.swift"
 min_acl: private
 custom_categories: 
-    - name: 'Controllers'
-    - children: ['ViewController']
+    - name: Controllers
+      children: 
+        - ViewController
