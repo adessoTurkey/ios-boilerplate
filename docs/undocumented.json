@@ -1,0 +1,19 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/gonder/Desktop/Workspace/adesso-boilerplate/ios-boilerplate/ViewController.swift",
+      "line": 11,
+      "symbol": "ViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gonder/Desktop/Workspace/adesso-boilerplate/ios-boilerplate/ViewController.swift",
+      "line": 13,
+      "symbol": "ViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/gonder/Desktop/Workspace/adesso-boilerplate"
+}

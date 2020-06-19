@@ -1,0 +1,21 @@
+xcodebuild_arguments: 
+  - "clean" 
+  - "build"
+  - "-workspace"
+  - "ios-boilerplate.xcworkspace"
+  - "-scheme"
+  - "ios-boilerplate"
+  - "-configuration"
+  - "Debug"
+  - "CODE_SIGNING_ALLOWED=NO"
+author: adesso Turkey
+author_url: https://github.com/adessoTurkey
+module: ios_boilerplate
+exclude: 
+    - "**/AppDelegate.swift"
+    - "**/SceneDelegate.swift"
+min_acl: private
+custom_categories: 
+    - name: Controllers
+      children: 
+        - ViewController
