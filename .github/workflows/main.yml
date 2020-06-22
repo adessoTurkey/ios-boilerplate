@@ -18,7 +18,7 @@ jobs:
     - uses: grkmndr/jazzy-doc-generation-action@v1.1
       with:
         config: .jazzy.yaml
-
+    - run: cd /var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/ && more $(ls -1 | grep 'xcodebuild.*log')
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Jazzy documentation updated.
