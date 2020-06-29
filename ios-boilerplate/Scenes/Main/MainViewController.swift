@@ -39,7 +39,6 @@ extension MainViewController: MainViewModelDelegate {
 
 extension MainViewController: MainTableViewAdapterDelegate {
 
-    func selectedItem(at indexPath: IndexPath) {
-        print("selected")
+    func didSelectItem(at indexPath: IndexPath) {
     }
 }

@@ -80,7 +80,7 @@ protocol MainTableViewAdapterDelegate: class {
      - Parameters:
         - at: Index path of the selected item.
     */
-    func selectedItem(at indexPath: IndexPath)
+    func didSelectItem(at indexPath: IndexPath)
 }
 
 class MainTableViewAdapter: NSObject, MainTableViewAdapterProtocol {
@@ -168,12 +168,12 @@ extension MainTableViewAdapter: UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: MainTableViewCell = tableView.dequeue(at: indexPath)
         let cellItem = item(at: indexPath)
-        cell.titleLabel.text = cellItem?.title
+        cell.configure(with: cellItem)
 
         return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate?.selectedItem(at: indexPath)
+        delegate?.didSelectItem(at: indexPath)
     }
 }

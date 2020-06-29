@@ -13,4 +13,8 @@ class MainTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
 
     static let identifier = "MainTableViewCell"
+
+    func configure(with item: MainTableViewItem?) {
+        titleLabel.text = item?.title
+    }
 }
