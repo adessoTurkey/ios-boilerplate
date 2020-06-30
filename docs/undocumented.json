@@ -1,19 +1,292 @@
 {
   "warnings": [
     {
-      "file": "/Users/runner/runners/2.263.0/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/ViewController.swift",
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Extensions/UITableViewExtensions.swift",
+      "line": 13,
+      "symbol": "UITableView.dequeue(withIdentifier:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Extensions/UITableViewExtensions.swift",
+      "line": 19,
+      "symbol": "UITableView.dequeue(withIdentifier:at:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewAdapter.swift",
       "line": 11,
-      "symbol": "ViewController",
+      "symbol": "MainTableViewAdapterProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewAdapter.swift",
+      "line": 75,
+      "symbol": "MainTableViewAdapterDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewAdapter.swift",
+      "line": 86,
+      "symbol": "MainTableViewAdapter",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/runners/2.263.0/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/ViewController.swift",
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewAdapter.swift",
+      "line": 88,
+      "symbol": "MainTableViewAdapter.tableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewAdapter.swift",
+      "line": 89,
+      "symbol": "MainTableViewAdapter.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewAdapter.swift",
+      "line": 91,
+      "symbol": "MainTableViewAdapter.dataSource",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewAdapter.swift",
+      "line": 97,
+      "symbol": "MainTableViewAdapter.init(tableView:dataSource:delegate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewAdapter.swift",
+      "line": 152,
+      "symbol": "MainTableViewAdapter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewAdapter.swift",
+      "line": 154,
+      "symbol": "MainTableViewAdapter.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewAdapter.swift",
+      "line": 158,
+      "symbol": "MainTableViewAdapter.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewAdapter.swift",
+      "line": 166,
+      "symbol": "MainTableViewAdapter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewAdapter.swift",
+      "line": 168,
+      "symbol": "MainTableViewAdapter.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewAdapter.swift",
+      "line": 176,
+      "symbol": "MainTableViewAdapter.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewCell.swift",
+      "line": 11,
+      "symbol": "MainTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewCell.swift",
       "line": 13,
-      "symbol": "ViewController.viewDidLoad()",
+      "symbol": "MainTableViewCell.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewCell.swift",
+      "line": 15,
+      "symbol": "MainTableViewCell.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewCell.swift",
+      "line": 17,
+      "symbol": "MainTableViewCell.configure(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewDataSource.swift",
+      "line": 11,
+      "symbol": "MainTableViewItem",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewDataSource.swift",
+      "line": 13,
+      "symbol": "MainTableViewItem.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewDataSource.swift",
+      "line": 16,
+      "symbol": "MainTableViewSection",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewDataSource.swift",
+      "line": 18,
+      "symbol": "MainTableViewSection.items",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewDataSource.swift",
+      "line": 21,
+      "symbol": "MainTableViewDataSource",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainTableViewDataSource.swift",
+      "line": 23,
+      "symbol": "MainTableViewDataSource.sections",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainViewController.swift",
+      "line": 11,
+      "symbol": "MainViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainViewController.swift",
+      "line": 13,
+      "symbol": "MainViewController.tableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainViewController.swift",
+      "line": 15,
+      "symbol": "MainViewController.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainViewController.swift",
+      "line": 16,
+      "symbol": "MainViewController.tableViewAdapter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainViewController.swift",
+      "line": 17,
+      "symbol": "MainViewController.tableViewDataSource",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainViewController.swift",
+      "line": 19,
+      "symbol": "MainViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainViewController.swift",
+      "line": 28,
+      "symbol": "MainViewController.setupViewModel()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainViewController.swift",
+      "line": 33,
+      "symbol": "MainViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainViewController.swift",
+      "line": 40,
+      "symbol": "MainViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainViewModel.swift",
+      "line": 11,
+      "symbol": "MainViewModelDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainViewModel.swift",
+      "line": 22,
+      "symbol": "MainViewModelProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainViewModel.swift",
+      "line": 30,
+      "symbol": "MainViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainViewModel.swift",
+      "line": 32,
+      "symbol": "MainViewModel.ListItems",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainViewModel.swift",
+      "line": 33,
+      "symbol": "MainViewModel.ListItems.tableView",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainViewModel.swift",
+      "line": 36,
+      "symbol": "MainViewModel.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-boilerplate/ios-boilerplate/ios-boilerplate/Scenes/Main/MainViewModel.swift",
+      "line": 38,
+      "symbol": "MainViewModel.init(delegate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/runner/runners/2.263.0/work/ios-boilerplate/ios-boilerplate"
+  "source_directory": "/Users/runner/work/ios-boilerplate/ios-boilerplate"
 }
