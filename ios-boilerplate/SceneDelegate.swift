@@ -2,8 +2,8 @@
 //  SceneDelegate.swift
 //  ios-boilerplate
 //
-//  Created by Firat Yenidunya on 15.05.2020.
-//  Copyright © 2020 com.adesso.turkey. All rights reserved.
+//  Created by Can Baybunar on 18.11.2020.
+//  Copyright © 2020 Adesso Turkey. All rights reserved.
 //
 
 import UIKit

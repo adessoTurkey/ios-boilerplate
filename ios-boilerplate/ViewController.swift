@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  ios-boilerplate
 //
-//  Created by Firat Yenidunya on 15.05.2020.
-//  Copyright © 2020 adesso Turkey. All rights reserved.
+//  Created by Can Baybunar on 18.11.2020.
+//  Copyright © 2020 Adesso Turkey. All rights reserved.
 //
 
 import UIKit
