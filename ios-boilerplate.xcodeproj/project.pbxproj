@@ -15,6 +15,9 @@
 		2FCDE1022565722600203445 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FCDE1002565722600203445 /* LaunchScreen.storyboard */; };
 		2FCDE10D2565722600203445 /* ios_boilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCDE10C2565722600203445 /* ios_boilerplateTests.swift */; };
 		2FCDE1182565722600203445 /* ios_boilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCDE1172565722600203445 /* ios_boilerplateUITests.swift */; };
+		2FCDE12F2566517900203445 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FCDE12E2566517800203445 /* Colors.xcassets */; };
+		2FCDE1312566518D00203445 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FCDE1302566518D00203445 /* Icons.xcassets */; };
+		2FCDE1332566519700203445 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FCDE1322566519700203445 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,12 @@
 		2FCDE1132565722600203445 /* ios-boilerplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-boilerplateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FCDE1172565722600203445 /* ios_boilerplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_boilerplateUITests.swift; sourceTree = "<group>"; };
 		2FCDE1192565722600203445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FCDE1292566444C00203445 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		2FCDE12E2566517800203445 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		2FCDE1302566518D00203445 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		2FCDE1322566519700203445 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2FCDE134256651EF00203445 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		2FCDE1352566520A00203445 /* AppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +108,12 @@
 		2FCDE0F42565722400203445 /* ios-boilerplate */ = {
 			isa = PBXGroup;
 			children = (
-				2FCDE0F52565722400203445 /* AppDelegate.swift */,
-				2FCDE0F72565722400203445 /* SceneDelegate.swift */,
-				2FCDE0F92565722400203445 /* ViewController.swift */,
-				2FCDE0FB2565722400203445 /* Main.storyboard */,
-				2FCDE0FE2565722600203445 /* Assets.xcassets */,
-				2FCDE1002565722600203445 /* LaunchScreen.storyboard */,
-				2FCDE1032565722600203445 /* Info.plist */,
+				2FCDE1252565B96500203445 /* Application */,
+				2FCDE1282566415900203445 /* Configs */,
+				2FCDE136256659F700203445 /* Network */,
+				2FCDE1272566413F00203445 /* Scenes */,
+				2FCDE1262566412700203445 /* Resources */,
+				2FCDE13725665B5E00203445 /* Utility */,
 			);
 			path = "ios-boilerplate";
 			sourceTree = "<group>";
@@ -126,6 +134,69 @@
 				2FCDE1192565722600203445 /* Info.plist */,
 			);
 			path = "ios-boilerplateUITests";
+			sourceTree = "<group>";
+		};
+		2FCDE1252565B96500203445 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2FCDE0F52565722400203445 /* AppDelegate.swift */,
+				2FCDE0F72565722400203445 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2FCDE1262566412700203445 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2FCDE0FE2565722600203445 /* Assets.xcassets */,
+				2FCDE12E2566517800203445 /* Colors.xcassets */,
+				2FCDE1302566518D00203445 /* Icons.xcassets */,
+				2FCDE1322566519700203445 /* Images.xcassets */,
+				2FCDE1032565722600203445 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2FCDE1272566413F00203445 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2FCDE0F92565722400203445 /* ViewController.swift */,
+				2FCDE0FB2565722400203445 /* Main.storyboard */,
+				2FCDE1002565722600203445 /* LaunchScreen.storyboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2FCDE1282566415900203445 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				2FCDE1292566444C00203445 /* Development.xcconfig */,
+				2FCDE134256651EF00203445 /* Production.xcconfig */,
+				2FCDE1352566520A00203445 /* AppStore.xcconfig */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		2FCDE136256659F700203445 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2FCDE13725665B5E00203445 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2FCDE13825665B7200203445 /* Extensions */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		2FCDE13825665B7200203445 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +304,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FCDE1022565722600203445 /* LaunchScreen.storyboard in Resources */,
+				2FCDE12F2566517900203445 /* Colors.xcassets in Resources */,
 				2FCDE0FF2565722600203445 /* Assets.xcassets in Resources */,
+				2FCDE1332566519700203445 /* Images.xcassets in Resources */,
 				2FCDE0FD2565722400203445 /* Main.storyboard in Resources */,
+				2FCDE1312566518D00203445 /* Icons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +510,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8J8CUXWK9;
-				INFOPLIST_FILE = "ios-boilerplate/Info.plist";
+				INFOPLIST_FILE = "ios-boilerplate/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,7 +529,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8J8CUXWK9;
-				INFOPLIST_FILE = "ios-boilerplate/Info.plist";
+				INFOPLIST_FILE = "ios-boilerplate/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
