@@ -5,8 +5,8 @@
 # For the test, you can run `git commit` with an empty` commit message`
 
 export PATH=/usr/local/bin:$PATH
-
-LINT=$(which swiftlint)
+#Path to swiftlint
+LINT=Pods/SwiftLint/swiftlint
 
 if [[ -e "${LINT}" ]]; then
 	echo "SwiftLint Start..."
