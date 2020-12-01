@@ -275,6 +275,7 @@
 				2FCDE0EF2565722400203445 /* Frameworks */,
 				2FCDE0F02565722400203445 /* Resources */,
 				26C4C4452575230A00358DAE /* Swiftlint */,
+				3CEDA0B120DD58C892D496B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -312,6 +313,7 @@
 				2FCDE10F2565722600203445 /* Sources */,
 				2FCDE1102565722600203445 /* Frameworks */,
 				2FCDE1112565722600203445 /* Resources */,
+				E3291048690177CBFDC3248D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -415,6 +417,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
+		3CEDA0B120DD58C892D496B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-boilerplate/Pods-ios-boilerplate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-boilerplate/Pods-ios-boilerplate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-boilerplate/Pods-ios-boilerplate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4234DEB7CA130E22CF7E1812 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -479,6 +498,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3291048690177CBFDC3248D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
