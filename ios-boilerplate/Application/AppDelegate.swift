@@ -11,10 +11,17 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    let services: [UIApplicationDelegate] = [SwifterServerService()]
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        return true
+        return services.allSatisfy { service -> Bool in
+            service.application?(application, didFinishLaunchingWithOptions: launchOptions) ?? true
+        }
+    }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        SwifterManager.instance.stopSwifterServer()
     }
 
     // MARK: UISceneSession Lifecycle
@@ -33,4 +40,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 }
-
