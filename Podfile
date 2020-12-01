@@ -10,7 +10,9 @@ target 'ios-boilerplate' do
 
   # Pods for ios-boilerplate
 
-  pod 'SwiftLint'
+  # Utils
+  pod 'SwiftLint' # A tool to enforce Swift style and conventions.
+  pod 'SwifterSwift'
 
   target 'ios-boilerplateTests' do
     inherit! :search_paths
