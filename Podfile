@@ -12,7 +12,7 @@ target 'ios-boilerplate' do
 
   # Utils
   pod 'SwiftLint' # A tool to enforce Swift style and conventions.
-  pod 'Swifter', '~> 1.5.0', :configurations => ['Development']
+  pod 'Swifter', '~> 1.5.0', :configurations => ['Development', 'Debug']
 
   target 'ios-boilerplateTests' do
     inherit! :search_paths
