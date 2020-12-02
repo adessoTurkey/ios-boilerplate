@@ -11,7 +11,7 @@ target 'ios-boilerplate' do
   # Pods for ios-boilerplate
 
   pod 'SwiftLint'
-  pod 'CocoaDebug', '1.4.8'
+  pod 'CocoaDebug', '1.4.8', :configurations => ['Development']
 
   target 'ios-boilerplateTests' do
     inherit! :search_paths
