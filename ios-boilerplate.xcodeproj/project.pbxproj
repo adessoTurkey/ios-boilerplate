@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26BCDA102579826700096894 /* LoggerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BCDA0F2579826700096894 /* LoggerManager.swift */; };
+		26BCDA202579833600096894 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BCDA1F2579833600096894 /* Logger.swift */; };
+		26BCDA252579852700096894 /* LoggingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BCDA242579852700096894 /* LoggingService.swift */; };
+		26BCDA2A2579857E00096894 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BCDA292579857E00096894 /* UIApplicationExtension.swift */; };
+		26BCDA2F2579859500096894 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BCDA2E2579859500096894 /* UIDeviceExtension.swift */; };
 		26C4C565257651F500358DAE /* SwifterServerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4C564257651F500358DAE /* SwifterServerService.swift */; };
 		26C4C58A25766B6100358DAE /* SwifterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4C58925766B6100358DAE /* SwifterManager.swift */; };
 		26C4C62525769BE400358DAE /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4C62425769BE400358DAE /* Configuration.swift */; };
@@ -53,6 +58,11 @@
 /* Begin PBXFileReference section */
 		038895AE68B1731C6E7264B1 /* Pods-ios-boilerplateTests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplateTests.production.xcconfig"; path = "Target Support Files/Pods-ios-boilerplateTests/Pods-ios-boilerplateTests.production.xcconfig"; sourceTree = "<group>"; };
 		0E0BED62A6EC7D6FE2A7AAA1 /* Pods-ios-boilerplate-ios-boilerplateUITests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate-ios-boilerplateUITests.appstore.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests.appstore.xcconfig"; sourceTree = "<group>"; };
+		26BCDA0F2579826700096894 /* LoggerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerManager.swift; sourceTree = "<group>"; };
+		26BCDA1F2579833600096894 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		26BCDA242579852700096894 /* LoggingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingService.swift; sourceTree = "<group>"; };
+		26BCDA292579857E00096894 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		26BCDA2E2579859500096894 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		26C4C564257651F500358DAE /* SwifterServerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterServerService.swift; sourceTree = "<group>"; };
 		26C4C58925766B6100358DAE /* SwifterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterManager.swift; sourceTree = "<group>"; };
 		26C4C62425769BE400358DAE /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
@@ -159,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				26C4C564257651F500358DAE /* SwifterServerService.swift */,
+				26BCDA242579852700096894 /* LoggingService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -167,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				26C4C58925766B6100358DAE /* SwifterManager.swift */,
+				26BCDA0F2579826700096894 /* LoggerManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -288,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				2FCDE13825665B7200203445 /* Extensions */,
+				26BCDA1F2579833600096894 /* Logger.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -301,6 +314,8 @@
 				2F56AE89256E44BB0007D0A2 /* UICollectionViewCellExtensions.swift */,
 				2F56AE8B256E44F00007D0A2 /* UIViewControllerExtensions.swift */,
 				2F56AE8D256E487F0007D0A2 /* StringExtensions.swift */,
+				26BCDA292579857E00096894 /* UIApplicationExtension.swift */,
+				26BCDA2E2579859500096894 /* UIDeviceExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -573,12 +588,17 @@
 				2FCDE0FA2565722400203445 /* ViewController.swift in Sources */,
 				2F56AE8E256E487F0007D0A2 /* StringExtensions.swift in Sources */,
 				2F56AE8A256E44BB0007D0A2 /* UICollectionViewCellExtensions.swift in Sources */,
+				26BCDA2A2579857E00096894 /* UIApplicationExtension.swift in Sources */,
 				26C4C62525769BE400358DAE /* Configuration.swift in Sources */,
 				2FCDE0F62565722400203445 /* AppDelegate.swift in Sources */,
+				26BCDA252579852700096894 /* LoggingService.swift in Sources */,
+				26BCDA102579826700096894 /* LoggerManager.swift in Sources */,
 				26C4C58A25766B6100358DAE /* SwifterManager.swift in Sources */,
 				2FCDE0F82565722400203445 /* SceneDelegate.swift in Sources */,
+				26BCDA202579833600096894 /* Logger.swift in Sources */,
 				2FCDE1572566AE2700203445 /* UITableViewExtensions.swift in Sources */,
 				2F56AE88256E44A10007D0A2 /* UITableViewCellExtensions.swift in Sources */,
+				26BCDA2F2579859500096894 /* UIDeviceExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
