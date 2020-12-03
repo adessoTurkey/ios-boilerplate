@@ -1,16 +1,24 @@
 PODS:
+  - CocoaDebug (1.4.8):
+    - FBRetainCycleDetector
+  - FBRetainCycleDetector (0.1.4)
   - SwiftLint (0.40.3)
 
 DEPENDENCIES:
+  - CocoaDebug (= 1.4.8)
   - SwiftLint
 
 SPEC REPOS:
   trunk:
+    - CocoaDebug
+    - FBRetainCycleDetector
     - SwiftLint
 
 SPEC CHECKSUMS:
+  CocoaDebug: 438fed049090d61c777d464eb2771ca87e1430ed
+  FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
 
-PODFILE CHECKSUM: dc005df2f4c88a2ce8c17eda736b9ec410fe1421
+PODFILE CHECKSUM: 1a7a692283bf6b997dedebfa8d7c3990a47ff901
 
 COCOAPODS: 1.9.3
