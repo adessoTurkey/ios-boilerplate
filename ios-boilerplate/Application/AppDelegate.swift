@@ -10,8 +10,14 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    private let services: [UIApplicationDelegate] = [SwifterServerService()]
+    
+    lazy private var services: [UIApplicationDelegate] = {
+            var list : [UIApplicationDelegate] = []
+            #if canImport(Swifter)
+            list.append(SwifterServerService())
+            #endif
+            return list
+    }()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
