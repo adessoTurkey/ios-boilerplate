@@ -10,8 +10,10 @@ target 'ios-boilerplate' do
 
   # Pods for ios-boilerplate
 
-  pod 'SwiftLint'
-  pod 'CocoaDebug', '1.4.8', :configurations => ['Development']
+  # Utils
+  pod 'SwiftLint', '~> 0.41.0' # A tool to enforce Swift style and conventions.
+  pod 'Swifter', '~> 1.5.0', :configurations => ['Swifter']
+  pod 'CocoaDebug', '1.4.8', :configurations => ['Development','Swifter']
 
   target 'ios-boilerplateTests' do
     inherit! :search_paths
