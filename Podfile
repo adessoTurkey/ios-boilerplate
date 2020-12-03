@@ -11,9 +11,8 @@ target 'ios-boilerplate' do
   # Pods for ios-boilerplate
 
   # Utils
-  pod 'SwiftLint' # A tool to enforce Swift style and conventions.
+  pod 'SwiftLint', '~> 0.41.0' # A tool to enforce Swift style and conventions.
   pod 'Swifter', '~> 1.5.0', :configurations => ['Development']
-  pod 'SwiftLint'
   pod 'CocoaDebug', '1.4.8', :configurations => ['Development']
 
   target 'ios-boilerplateTests' do

@@ -326,7 +326,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FCDE11F2565722600203445 /* Build configuration list for PBXNativeTarget "ios-boilerplateTests" */;
 			buildPhases = (
-				40FC5ED92626447BD7C11FA8 /* [CP] Check Pods Manifest.lock */,
+				682112BD1D32356E32B0D558 /* [CP] Check Pods Manifest.lock */,
 				2FCDE1042565722600203445 /* Sources */,
 				2FCDE1052565722600203445 /* Frameworks */,
 				2FCDE1062565722600203445 /* Resources */,
@@ -345,7 +345,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FCDE1222565722600203445 /* Build configuration list for PBXNativeTarget "ios-boilerplateUITests" */;
 			buildPhases = (
-				A2CBAB1383AFDEDB4C691590 /* [CP] Check Pods Manifest.lock */,
+				EB2EECDEA27518CB9774A14A /* [CP] Check Pods Manifest.lock */,
 				2FCDE10F2565722600203445 /* Sources */,
 				2FCDE1102565722600203445 /* Frameworks */,
 				2FCDE1112565722600203445 /* Resources */,
@@ -436,23 +436,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		07C2E89F1C262CB8888CCF0E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		26C4C4452575230A00358DAE /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -488,7 +471,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-boilerplate/Pods-ios-boilerplate-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4234DEB7CA130E22CF7E1812 /* [CP] Check Pods Manifest.lock */ = {
+		682112BD1D32356E32B0D558 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -547,6 +530,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB2EECDEA27518CB9774A14A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-boilerplate-ios-boilerplateUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -995,7 +1000,7 @@
 		2FCDE0ED2565722400203445 /* Build configuration list for PBXProject "ios-boilerplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-                2F56AE97256E68000007D0A2 /* Development */,
+				2F56AE97256E68000007D0A2 /* Development */,
 				2FCDE11A2565722600203445 /* Production */,
 				2FCDE11B2565722600203445 /* AppStore */,
 			);
@@ -1005,7 +1010,7 @@
 		2FCDE11C2565722600203445 /* Build configuration list for PBXNativeTarget "ios-boilerplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-                2F56AE98256E68000007D0A2 /* Development */,
+				2F56AE98256E68000007D0A2 /* Development */,
 				2FCDE11D2565722600203445 /* Production */,
 				2FCDE11E2565722600203445 /* AppStore */,
 			);
@@ -1015,7 +1020,7 @@
 		2FCDE11F2565722600203445 /* Build configuration list for PBXNativeTarget "ios-boilerplateTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-                2F56AE99256E68000007D0A2 /* Development */,
+				2F56AE99256E68000007D0A2 /* Development */,
 				2FCDE1202565722600203445 /* Production */,
 				2FCDE1212565722600203445 /* AppStore */,
 			);
@@ -1025,7 +1030,7 @@
 		2FCDE1222565722600203445 /* Build configuration list for PBXNativeTarget "ios-boilerplateUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-                2F56AE9A256E68000007D0A2 /* Development */,
+				2F56AE9A256E68000007D0A2 /* Development */,
 				2FCDE1232565722600203445 /* Production */,
 				2FCDE1242565722600203445 /* AppStore */,
 			);
