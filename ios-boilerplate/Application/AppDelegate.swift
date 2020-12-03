@@ -21,7 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func applicationWillTerminate(_ application: UIApplication) {
+        #if canImport(Swifter)
         SwifterManager.instance.stopSwifterServer()
+        #endif
     }
 
     // MARK: UISceneSession Lifecycle
