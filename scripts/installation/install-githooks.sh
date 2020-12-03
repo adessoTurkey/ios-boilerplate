@@ -4,7 +4,7 @@
 
 PARENTDIR=$(cd ../ && pwd)
 PROJECTDIR=$(cd ../../ && pwd)
-SRC_DIR="$PARENTDIR/gitHooks/"
+SRC_DIR="$PARENTDIR/git-hooks/"
 DST_DIR="$PROJECTDIR/.git/hooks"
 COPY_HIDDEN=
 ORIG_IFS=$IFS
