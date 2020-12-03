@@ -1000,8 +1000,8 @@
 		2FCDE0ED2565722400203445 /* Build configuration list for PBXProject "ios-boilerplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
+                2F56AE97256E68000007D0A2 /* Development */,
 				2FCDE11A2565722600203445 /* Production */,
-				2F56AE97256E68000007D0A2 /* Development */,
 				2FCDE11B2565722600203445 /* AppStore */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1010,8 +1010,8 @@
 		2FCDE11C2565722600203445 /* Build configuration list for PBXNativeTarget "ios-boilerplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
+                2F56AE98256E68000007D0A2 /* Development */,
 				2FCDE11D2565722600203445 /* Production */,
-				2F56AE98256E68000007D0A2 /* Development */,
 				2FCDE11E2565722600203445 /* AppStore */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1020,8 +1020,8 @@
 		2FCDE11F2565722600203445 /* Build configuration list for PBXNativeTarget "ios-boilerplateTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
+                2F56AE99256E68000007D0A2 /* Development */,
 				2FCDE1202565722600203445 /* Production */,
-				2F56AE99256E68000007D0A2 /* Development */,
 				2FCDE1212565722600203445 /* AppStore */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1030,8 +1030,8 @@
 		2FCDE1222565722600203445 /* Build configuration list for PBXNativeTarget "ios-boilerplateUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
+                2F56AE9A256E68000007D0A2 /* Development */,
 				2FCDE1232565722600203445 /* Production */,
-				2F56AE9A256E68000007D0A2 /* Development */,
 				2FCDE1242565722600203445 /* AppStore */,
 			);
 			defaultConfigurationIsVisible = 0;
