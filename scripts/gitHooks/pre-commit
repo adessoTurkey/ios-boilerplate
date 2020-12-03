@@ -1,4 +1,4 @@
-#!/bin/bash
+
 
 # Git Hook for SwiftLint 
 # Runs at every commit and checks for an error.
@@ -6,7 +6,7 @@
 
 export PATH=/usr/local/bin:$PATH
 #Path to swiftlint
-LINT=Pods/SwiftLint/swiftlint
+LINT=./Pods/SwiftLint/swiftlint
 
 if [[ -e "${LINT}" ]]; then
 	echo "SwiftLint Start..."
@@ -16,7 +16,7 @@ else
 	exit 1
 fi
 
-RESULT=$($LINT lint --quiet --config eta-swiftlint.yml)
+RESULT=$($LINT lint --quiet --config .swiftlint.yml)
 
 if [ "$RESULT" == '' ]; then
 	printf "SwiftLint Finished.\n"
@@ -40,4 +40,3 @@ else
 
 	exit 1
 fi
-
