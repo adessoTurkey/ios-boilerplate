@@ -28,11 +28,10 @@ Table of Contents
 | **Utility**/ | Extensions, final classes etc. will be putt here  |
 | **Resources**/ | Images, icons, assets, fonts, Mocks, `Localizable.strings`... 
 
-
 ## Workspace Preparing
 
-- change your working directory to `scripts/installation` then copy `rename-project.swift file to root directory`  from the terminal `$./rename-project.swift "$OLD_PROJECT_NAME" "$NEW_PROJECT_NAME"` - this will change project name.
-- change your working directory to  `scripts/installation` `$sh install-githooks.sh` - this will install git-hooks into your project.
+- change your working directory to `scripts/installation` then from the terminal `$./rename-project.swift "$OLD_PROJECT_NAME" "$NEW_PROJECT_NAME"` - this will change project name.
+- change your working directory to  `scripts/installation` then from the terminal `$sh install-githooks.sh` - this will install git-hooks into your project.
 - `pod install` - this command will regenerate workspace with Xcode.
 	- [pod](https://cocoapods.org/) command & project's dependences.
 - `open *.xcw*` - this command will open generated workspace with Xcode.
@@ -51,6 +50,7 @@ Table of Contents
 - [CocoaPods](https://cocoapods.org/) - CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. It has over 33 thousand libraries and is used in over 2.2 million apps. CocoaPods can help you scale your projects elegantly.
 - [SwiftLint](https://github.com/realm/SwiftLint) - A tool to enforce Swift style and conventions.
 - [TestFlight](https://help.apple.com/itunes-connect/developer/#/devdc42b26b8) - TestFlight beta testing lets you distribute beta builds of your app to testers and collect feedback.
+- [Appcenter](https://appcenter.ms/) - Continuously build, test, release, and monitor apps for every platform.
 
 ## License
 
