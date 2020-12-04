@@ -155,6 +155,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		26BCDA36257A398600096894 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		26C4C5632576519000358DAE /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,7 +214,7 @@
 				2FCDE1252565B96500203445 /* Application */,
 				2FCDE1282566415900203445 /* Configs */,
 				26C4C58825766B4400358DAE /* Managers */,
-				2FCDE136256659F700203445 /* Network */,
+				26BCDA36257A398600096894 /* Network */,
 				2FCDE1272566413F00203445 /* Scenes */,
 				2FCDE1262566412700203445 /* Resources */,
 				2FCDE13725665B5E00203445 /* Utility */,
@@ -275,13 +282,6 @@
 				26C4C62425769BE400358DAE /* Configuration.swift */,
 			);
 			path = Configs;
-			sourceTree = "<group>";
-		};
-		2FCDE136256659F700203445 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		2FCDE13725665B5E00203445 /* Utility */ = {

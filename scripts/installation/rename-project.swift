@@ -19,12 +19,24 @@ class XcodeProjectRenamer: NSObject {
     
     // MARK: - API
     func run() {
+        var currentPath = fileManager.currentDirectoryPath
+        let scriptPath: URL = URL(fileURLWithPath: currentPath)
+        var folderPath: URL = scriptPath.deletingLastPathComponent()
+        folderPath = folderPath.deletingLastPathComponent()
+        
+        if fileManager.changeCurrentDirectoryPath(folderPath.path) {
+            print("\nSuccess")
+            currentPath = fileManager.currentDirectoryPath
+        } else {
+            print("Xcode project or workspace with name: [\(oldName)] is not found at current path.")
+        }
+        
+        print("from changing directory Current directory is \(currentPath)")
         print("\n------------------------------------------")
         print("Rename Xcode Project from [\(oldName)] to [\(newName)]")
         print("Current Path: ")
         print("------------------------------------------\n")
         
-        let currentPath = fileManager.currentDirectoryPath
         if validatePath(currentPath) {
             enumeratePath(currentPath)
         } else {
