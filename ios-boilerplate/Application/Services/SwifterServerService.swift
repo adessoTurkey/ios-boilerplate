@@ -11,10 +11,10 @@ import UIKit
 import Swifter
 #endif
 
-
 class  SwifterServerService: NSObject, UIApplicationDelegate {
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         #if canImport(Swifter)
         SwifterManager.instance.startSwifterServer()
         #endif

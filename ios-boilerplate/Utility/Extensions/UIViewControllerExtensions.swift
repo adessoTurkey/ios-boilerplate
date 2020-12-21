@@ -15,7 +15,7 @@ extension UIViewController {
 
         return instanceFromNib()
     }
-    
+
     func hideKeyboard() {
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
