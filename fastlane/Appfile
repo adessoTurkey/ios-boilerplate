@@ -1,0 +1,6 @@
+app_identifier "com.adesso.ios-boilerplate" # The bundle identifier of your app
+apple_id "Ismail.Kilic@adesso.com.tr" # Your Apple email address
+
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
