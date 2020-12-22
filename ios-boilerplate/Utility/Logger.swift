@@ -19,17 +19,17 @@ enum LogLevel: Int, CustomStringConvertible {
 
     var description: String {
         switch self {
-            case .verbose:
-                return "Verbose"
-            case .debug:
-                return "Debug"
-            case .info:
-                return "Info"
-            case .warning:
-                return "Warning"
-            case .error:
-                return "Error"
-            }
+          case .verbose:
+            return "Verbose"
+          case .debug:
+            return "Debug"
+          case .info:
+            return "Info"
+          case .warning:
+            return "Warning"
+          case .error:
+            return "Error"
+        }
     }
 }
 
@@ -43,7 +43,7 @@ struct LogMessage: CustomStringConvertible {
     let line: Int
 
     var description: String {
-        return "\(file) [\(function):\(line)] \(level.description): \(message)"
+        "\(file) [\(function):\(line)] \(level.description): \(message)"
     }
 }
 
@@ -69,16 +69,16 @@ final class Logger {
                                  line: line)
 
         switch level {
-            case .verbose:
-                DDLogVerbose(message.description)
-            case .debug:
-                DDLogDebug(message.description)
-            case .info:
-                DDLogInfo(message.description)
-            case .warning:
-                DDLogWarn(message.description)
-            case .error:
-                DDLogError(message.description)
+          case .verbose:
+            DDLogVerbose(message.description)
+          case .debug:
+            DDLogDebug(message.description)
+          case .info:
+            DDLogInfo(message.description)
+          case .warning:
+            DDLogWarn(message.description)
+          case .error:
+            DDLogError(message.description)
         }
     }
 

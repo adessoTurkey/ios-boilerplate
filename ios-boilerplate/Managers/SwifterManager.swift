@@ -18,7 +18,7 @@ class SwifterManager {
         static let fileType: String = "json"
         static let port: UInt16 = 9081
     }
-    
+
     static let instance = SwifterManager()
     #if canImport(Swifter)
     var swifterServer: HttpServer?
@@ -41,7 +41,7 @@ class SwifterManager {
         #endif
     }
     // swiftlint:enable all
-    
+
     func stopSwifterServer() {
         #if canImport(Swifter)
         swifterServer?.stop()

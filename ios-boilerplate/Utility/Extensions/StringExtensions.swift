@@ -8,12 +8,12 @@
 import UIKit
 
 extension String {
-    
+
     var localized: String {
-        return NSLocalizedString(self, comment: "")
+        NSLocalizedString(self, comment: "") //swiftlint:disable:this nslocalizedstring_key
     }
-    
+
     static var empty: Self {
-        return ""
+        ""
     }
 }

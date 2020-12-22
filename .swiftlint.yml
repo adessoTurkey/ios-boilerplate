@@ -1,1 +1,126 @@
+disabled_rules: # rule identifiers to exclude from running
+  - identifier_name
+  - nesting
+  - function_parameter_count
+  - type_name
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+  - Project/R.generated.swift
 
+type_body_length:
+  - 300 # warning
+  - 400 # error
+
+# or they can set both explicitly
+file_length:
+  warning: 500
+  error: 800
+
+line_length:
+  warning: 175
+  error: 200
+  ignores_function_declarations: true
+  ignores_comments: true
+  ignores_interpolated_strings: true
+  ignores_urls: true
+
+disabled_rules:
+  - todo
+
+large_tuple: # warn user when using 3 values in tuple, give error if there are 4
+   - 3
+   - 4
+
+opt_in_rules:
+  - anyobject_protocol
+  - closure_spacing
+  - conditional_returns_on_newline
+  - duplicate_imports
+  - empty_string
+  - force_unwrapping
+  - implicit_return
+  - let_var_whitespace
+  - nslocalizedstring_key
+  - private_action
+  - private_outlet
+  - switch_case_on_newline
+  - unneeded_parentheses_in_closure_argument
+  - weak_computed_property
+  - control_statement
+  - empty_count
+  - trailing_newline
+  - colon
+  - comma
+   
+anyobject_protocol:
+  severity: error
+
+
+conditional_returns_on_newline:
+  severity: error
+  if_only: true
+
+cyclomatic_complexity:
+  - warning: 10
+  - error: 20
+  - ignores_case_statements: true
+
+discouraged_direct_init:
+  severity: error
+  types:
+    - Bundle
+    - UIDevice
+    - UIScreen
+    - UIApplication
+
+force_cast:
+  severity: error
+
+force_try:
+  severity: error
+
+force_unwrapping:
+  severity: error
+
+function_parameter_count:
+  warning: 5
+  error: 5
+
+identifier_name:
+  min_length:
+    warning: 3
+    error: 2
+  max_length:
+    warning: 40
+    error: 64
+  validates_start_with_lowercase: true
+  excluded:
+    - id
+
+nesting:
+  type_level:
+    warning: 2
+  statement_level:
+    warning: 3
+
+switch_case_alignment:
+  severity: error
+  indented_cases: true
+
+switch_case_on_newline:
+  severity: error
+
+type_name:
+  min_length:
+    warning: 3
+  max_length:
+    warning: 1000
+  validates_start_with_lowercase: true
+  excluded:
+    - "ID"
+    - "Id"
+    - "ios_boilerplateTests"
+    - "ios_boilerplateUITests"
+
+unneeded_break_in_switch:
+  severity: error
