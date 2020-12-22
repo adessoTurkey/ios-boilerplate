@@ -15,7 +15,7 @@ class LoggerManager {
         static let bytesInTenMegabytes: UInt64 = 1024 * 10
         static let maximumFileSize: UInt = 7
     }
-    
+
     private let logger = Logger()
     private var fileLogger: DDFileLogger?
     static let instance = LoggerManager()
@@ -56,11 +56,11 @@ class LoggerManager {
         }
         return logFileDataArray
     }
-    
+
     func setInfo(version: String, build: String, deviceModel: String, osVersion: String) {
         logger.info("Application started. Version: \(version), Build: \(build), Device: \(deviceModel), iOS: \(osVersion)")
     }
-    
+
     func setError(errorMessage: String) {
         logger.error(errorMessage)
     }

@@ -43,7 +43,7 @@ struct LogMessage: CustomStringConvertible {
     let line: Int
 
     var description: String {
-        return "\(file) [\(function):\(line)] \(level.description): \(message)"
+        "\(file) [\(function):\(line)] \(level.description): \(message)"
     }
 }
 
