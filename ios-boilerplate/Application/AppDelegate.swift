@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     lazy private var services: [UIApplicationDelegate] = {
-            var list: [UIApplicationDelegate] = []
+            var list: [UIApplicationDelegate] = [LoggingService()]
             #if canImport(Swifter)
             list.append(SwifterServerService())
             #endif

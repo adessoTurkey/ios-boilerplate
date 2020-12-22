@@ -30,11 +30,14 @@ Table of Contents
 
 ## Workspace Preparing
 
-- change your working directory to `scripts/installation` then from the terminal `$./rename-project.swift "$OLD_PROJECT_NAME" "$NEW_PROJECT_NAME"` - this will change project name.
-- change your working directory to  `scripts/installation` then from the terminal `$sh install-githooks.sh` - this will install git-hooks into your project.
-- `pod install` - this command will regenerate workspace with Xcode.
-	- [pod](https://cocoapods.org/) command & project's dependences.
-- `open *.xcw*` - this command will open generated workspace with Xcode.
+- On the directory of `{project_root}/scripts/installation`, via terminal
+	- run `./rename-project.swift "ios-boilerplate" "$NEW_PROJECT_NAME"` to change project name.
+	- run `sh install-githooks.sh` to install git-hooks into your project.
+	
+- On your project root via terminal
+	- run `pod install` - this command will regenerate workspace with Xcode.
+		- [pod](https://cocoapods.org/) command & project's dependences.
+	- run `open *.xcw*` - this command will open generated workspace with Xcode.
 
 ## List of Frameworks
 
