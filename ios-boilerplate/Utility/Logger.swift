@@ -19,15 +19,15 @@ enum LogLevel: Int, CustomStringConvertible {
 
     var description: String {
         switch self {
-        case .verbose:
+          case .verbose:
             return "Verbose"
-        case .debug:
+          case .debug:
             return "Debug"
-        case .info:
+          case .info:
             return "Info"
-        case .warning:
+          case .warning:
             return "Warning"
-        case .error:
+          case .error:
             return "Error"
         }
     }
@@ -69,15 +69,15 @@ final class Logger {
                                  line: line)
 
         switch level {
-        case .verbose:
+          case .verbose:
             DDLogVerbose(message.description)
-        case .debug:
+          case .debug:
             DDLogDebug(message.description)
-        case .info:
+          case .info:
             DDLogInfo(message.description)
-        case .warning:
+          case .warning:
             DDLogWarn(message.description)
-        case .error:
+          case .error:
             DDLogError(message.description)
         }
     }
