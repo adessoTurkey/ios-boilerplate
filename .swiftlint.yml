@@ -3,12 +3,6 @@ disabled_rules: # rule identifiers to exclude from running
   - nesting
   - function_parameter_count
   - type_name
-opt_in_rules: # some rules are only opt-in
-  - control_statement
-  - empty_count
-  - trailing_newline
-  - colon
-  - comma
 excluded: # paths to ignore during linting. Takes precedence over `included`.
   - Pods
   - Project/R.generated.swift
@@ -52,6 +46,11 @@ opt_in_rules:
   - switch_case_on_newline
   - unneeded_parentheses_in_closure_argument
   - weak_computed_property
+  - control_statement
+  - empty_count
+  - trailing_newline
+  - colon
+  - comma
    
 anyobject_protocol:
   severity: error
@@ -106,7 +105,6 @@ nesting:
 
 switch_case_alignment:
   severity: error
-  indented_cases: true
 
 switch_case_on_newline:
   severity: error
