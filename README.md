@@ -32,7 +32,7 @@ Table of Contents
 
 - On the directory of `{project_root}/scripts/installation`, via terminal
 	- run `./rename-project.swift "ios-boilerplate" "$NEW_PROJECT_NAME"` to change project name.
-	- run `sh install-githooks.sh` to install git-hooks into your project.
+	- run `sh install-githooks.sh` to install git-hooks into your project. Git hooks include SwiftLint validation, git message character limitation and issue-id check
 	
 - On your project root via terminal
 	- run `pod install` - this command will regenerate workspace with Xcode.
