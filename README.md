@@ -1,5 +1,7 @@
-IOS Boilerplate
+iOS Boilerplate
 ============================
+
+This is the iOS boilerplate created by Adesso Turkey for new projects using Swift 5. The project's primary objective is to help the development of a new one to kick-start the environment with configurations, the required features used in common Adesso projects, and the helpful functionalities.
 
 Table of Contents
 -----------------
@@ -20,7 +22,7 @@ Table of Contents
 
 | Name | Description |
 | --- | --- |
-| **Application/**/Services/ | Application based services will be defined here, such as logging, network, server... |
+| **Application/Services**/ | Application based services will be defined here, such as logging, network, server... |
 | **Configs**/ | Everything relative to build and ennvirenment configuration will be defined here |
 | **Managers**/ | Managers will be put here such as LoggerManager, UtilityManager... |
 | **Network**/ | Network related implementations will be defined here |
