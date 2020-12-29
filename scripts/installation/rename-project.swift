@@ -8,12 +8,11 @@ class XcodeProjectRenamer: NSObject {
     let fileManager = FileManager.default
     var processedPaths = [String]()
     
-    let oldName: String
+    var oldName: String = ""
     let newName: String
     
     // MARK: - Init
-    init(oldName: String, newName: String) {
-        self.oldName = oldName
+    init(newName: String) {
         self.newName = newName
     }
     
@@ -23,33 +22,54 @@ class XcodeProjectRenamer: NSObject {
         let scriptPath: URL = URL(fileURLWithPath: currentPath)
         var folderPath: URL = scriptPath.deletingLastPathComponent()
         folderPath = folderPath.deletingLastPathComponent()
-        
+
+        if let oldProjectName = findOldProjectName(folderPath) {
+            oldName = oldProjectName
+            print("Old project name found, processing continues")
+        } else {
+            print("Old project name not found, please enter old project name: ")
+            if let name = readLine() {
+                oldName = name
+            }
+        }
+
         if fileManager.changeCurrentDirectoryPath(folderPath.path) {
             print("\nSuccess")
             currentPath = fileManager.currentDirectoryPath
         } else {
             print("Xcode project or workspace with name: [\(oldName)] is not found at current path.")
         }
-        
+
         print("from changing directory Current directory is \(currentPath)")
         print("\n------------------------------------------")
         print("Rename Xcode Project from [\(oldName)] to [\(newName)]")
         print("Current Path: ")
         print("------------------------------------------\n")
-        
+
         if validatePath(currentPath) {
             enumeratePath(currentPath)
         } else {
             print("Xcode project or workspace with name: [\(oldName)] is not found at current path.")
         }
-        
+
         print("\n------------------------------------------")
         print("Xcode Project Rename Finished!")
         print("------------------------------------------\n")
     }
     
     // MARK: - Helpers
-    
+
+    private func findOldProjectName(_ projectFolderPath: URL) -> String? {
+        do {
+            let directoryContents = try FileManager.default.contentsOfDirectory(at: projectFolderPath, includingPropertiesForKeys: nil, options: [])
+            guard let projectFileName = directoryContents.filter({ $0.pathExtension == "xcodeproj" }).first?.deletingPathExtension().lastPathComponent else { return nil }
+            return projectFileName
+        }
+        catch {
+            return nil
+        }
+    }
+
     private func validatePath(_ path: String) -> Bool {
         let projectPath = path.appending("/\(oldName).xcodeproj")
         let workspacePath = path.appending("/\(oldName).xcworkspace")
@@ -133,13 +153,12 @@ class XcodeProjectRenamer: NSObject {
 }
 
 let arguments = CommandLine.arguments
-if arguments.count == 3 {
-    let oldName = arguments[1]
-    let newName = arguments[2].replacingOccurrences(of: " ", with: "")
-    let xpr = XcodeProjectRenamer(oldName: oldName, newName: newName)
+if arguments.count == 2 {
+    let newName = arguments[1].replacingOccurrences(of: " ", with: "")
+    let xpr = XcodeProjectRenamer(newName: newName)
     xpr.run()
 } else {
-    print("Invalid number of arguments! Expected OLD and NEW project name.")
+    print("Invalid number of arguments! Expected NEW project name.")
 }
 
 // swiftlint:enable all
