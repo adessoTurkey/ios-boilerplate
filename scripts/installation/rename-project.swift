@@ -125,10 +125,13 @@ class XcodeProjectRenamer: NSObject {
     private func updateContentsOfFile(atPath path: String) {
         do {
             let oldContent = try String(contentsOfFile: path, encoding: .utf8)
-            if oldContent.contains(oldName) {
-                let newContent = oldContent.replacingOccurrences(of: oldName, with: newName)
+            if oldContent.contains(oldName){
+                var newContent = oldContent.replacingOccurrences(of: oldName, with: newName)
+                if oldContent.contains("\(oldName)Tests") || oldContent.contains("\(oldName)UITests"){
+                    let testClassOldName = oldName.replacingOccurrences(of: "-", with: "_")
+                    newContent = newContent.replacingOccurrences(of: testClassOldName, with: newName)
+                }
                 try newContent.write(toFile: path, atomically: true, encoding: .utf8)
-                print("-- Updated: \(path)")
             }
         } catch {
             print("Error while updating file: \(error.localizedDescription)\n")
@@ -140,6 +143,15 @@ class XcodeProjectRenamer: NSObject {
             let oldItemName = URL(fileURLWithPath: path).lastPathComponent
             if oldItemName.contains(oldName) {
                 let newItemName = oldItemName.replacingOccurrences(of: oldName, with: newName)
+                let directoryURL = URL(fileURLWithPath: path).deletingLastPathComponent()
+                let newPath = directoryURL.appendingPathComponent(newItemName).path
+                try fileManager.moveItem(atPath: path, toPath: newPath)
+                print("-- Renamed: \(oldItemName) -> \(newItemName)")
+            } else if oldItemName.contains(oldName.replacingOccurrences(of: "-", with: "_")) {
+                let newItemName = oldItemName
+                    .replacingOccurrences(
+                        of: oldName.replacingOccurrences(of: "-", with: "_"),
+                        with: newName.replacingOccurrences(of: "-", with: "_"))
                 let directoryURL = URL(fileURLWithPath: path).deletingLastPathComponent()
                 let newPath = directoryURL.appendingPathComponent(newItemName).path
                 try fileManager.moveItem(atPath: path, toPath: newPath)
