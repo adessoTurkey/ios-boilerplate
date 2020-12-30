@@ -33,7 +33,7 @@ Table of Contents
 ## Workspace Preparing
 
 - On the directory of `{project_root}/scripts/installation`, via terminal
-	- run `./rename-project.swift "ios-boilerplate" "$NEW_PROJECT_NAME"` to change project name.
+	- run `./rename-project.swift "$NEW_PROJECT_NAME"` to change project name.
 	- run `sh install-githooks.sh` to install git-hooks into your project. Includes following git hooks; Git hooks include SwiftLint validation, git message character limitation and issue-id check
 		- pre-commit: This hook provides swiftlint control to detect errors quickly before commit.
 		- commit-msg: This hook checks that messages must have a minimum 50 characters. It also tells it should contain an issue tag. Ticket id must be between square brackets and [ticketid] separated by hyphens. See example: "[ISSUE-123] commit message" or "[JIRA-56] - commit message"
