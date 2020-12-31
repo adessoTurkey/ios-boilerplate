@@ -10,19 +10,29 @@ import Foundation
 import Alamofire
 
 class HeaderBuilder: HeaderBuilderProtocol {
-    func buildAuthenticatedHeaders(with customHeaders: HTTPHeaders) -> HTTPHeaders {
-        let headers = buildHeaders(with: customHeaders)
-        // add your authanticated headers here
-        return headers
+    private var headers: HTTPHeaders = [:]
+
+    @discardableResult
+    func prepareAuthenticationHeaders(with headers: HTTPHeaders) -> HeaderBuilderProtocol {
+        let headers = prepareDefaultHeaders(with: headers).build()
+        // add authenticated headers here
+        self.headers = headers
+        return self
     }
 
-    func buildHeaders(with customHeaders: HTTPHeaders) -> HTTPHeaders {
+    @discardableResult
+    func prepareDefaultHeaders(with headers: HTTPHeaders) -> HeaderBuilderProtocol {
         // add your default headers here
         let defaultHeaders: [String: String] = [:]
 
-        let mergedHeaders = defaultHeaders.merging(customHeaders.dictionary) { _, customHeaders in
-            customHeaders
+        let mergedHeaders = defaultHeaders.merging(headers.dictionary) { _, headers in
+            headers
         }
-        return HTTPHeaders(mergedHeaders)
+        self.headers = HTTPHeaders(mergedHeaders)
+        return self
+    }
+
+    func build() -> HTTPHeaders {
+        headers
     }
 }

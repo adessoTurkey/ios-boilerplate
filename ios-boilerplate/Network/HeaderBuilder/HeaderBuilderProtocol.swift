@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 
 protocol HeaderBuilderProtocol {
-    func buildAuthenticatedHeaders(with customHeaders: HTTPHeaders) -> HTTPHeaders
-    func buildHeaders(with customHeaders: HTTPHeaders) -> HTTPHeaders
+    func prepareAuthenticationHeaders(with headers: HTTPHeaders) -> HeaderBuilderProtocol
+    func prepareDefaultHeaders(with headers: HTTPHeaders) -> HeaderBuilderProtocol
+    func build() -> HTTPHeaders
 }

@@ -18,7 +18,6 @@ protocol BaseServiceProtocol {
 
 public class BaseService: BaseServiceProtocol {
 
-    private let disposeBag = DisposeBag()
     private let headerBuilder: HeaderBuilderProtocol
 
     init(headerBuilder: HeaderBuilderProtocol = HeaderBuilder()) {
@@ -27,15 +26,16 @@ public class BaseService: BaseServiceProtocol {
 
     @discardableResult
     func request<T: Decodable>(with requestObject: RequestObject) -> Single<T> {
-        requestObject.headers = createHeaders(with: requestObject.headers ?? [:])
+        requestObject.headers = createDefault(headers: requestObject.headers ?? [:])
         return Observable<T>.create { [weak self] observer in
             guard let self = self else {
-                observer.onCompleted()
+                Logger().log(level: .debug, message: "Unexpected Error")
+                observer.onError(AdessoError.customError(0, "Unexpected Error"))
                 return Disposables.create()
             }
             self.request(with: requestObject)
                 .responseDecodableObject { (response: AFDataResponse<T>) in
-                    self.handle(with: response, observer: observer )
+                    self.handle(with: response, observer: observer)
                 }
             return Disposables.create()
         }.share().asSingle()
@@ -43,10 +43,11 @@ public class BaseService: BaseServiceProtocol {
 
     @discardableResult
     func authenticatedRequest<T: Decodable>(with requestObject: RequestObject) -> Single<T> {
-        requestObject.headers = createAuthenticatedHeaders(with: requestObject.headers ?? [:])
+        requestObject.headers = createAuthentication(headers: requestObject.headers ?? [:])
         return Observable<T>.create { [weak self] observer in
             guard let self = self else {
-                observer.onCompleted()
+                Logger().log(level: .debug, message: "Unexpected Error")
+                observer.onError(AdessoError.customError(0, "Unexpected Error"))
                 return Disposables.create()
             }
             self.request(with: requestObject)
@@ -84,11 +85,15 @@ public class BaseService: BaseServiceProtocol {
         }
     }
 
-    private func createAuthenticatedHeaders(with customHeaders: HTTPHeaders) -> HTTPHeaders {
-        headerBuilder.buildAuthenticatedHeaders(with: customHeaders)
+    private func createAuthentication(headers: HTTPHeaders) -> HTTPHeaders {
+        headerBuilder
+            .prepareAuthenticationHeaders(with: headers)
+            .build()
     }
 
-    private func createHeaders(with customHeaders: HTTPHeaders) -> HTTPHeaders {
-        headerBuilder.buildHeaders(with: customHeaders)
+    private func createDefault(headers: HTTPHeaders) -> HTTPHeaders {
+        headerBuilder
+            .prepareDefaultHeaders(with: headers)
+            .build()
     }
 }
