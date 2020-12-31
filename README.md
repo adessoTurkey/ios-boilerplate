@@ -23,7 +23,7 @@ Table of Contents
 | Name | Description |
 | --- | --- |
 | **Application/Services**/ | Application based services will be defined here, such as logging, network, server... |
-| **Configs**/ | Everything relative to build and ennvirenment configuration will be defined here |
+| **Configs**/ | Everything relative to build and environment configuration will be defined here |
 | **Managers**/ | Managers will be put here such as LoggerManager, UtilityManager... |
 | **Network**/ | Network related implementations will be defined here |
 | **Scenes**/ | Application related scenes will be defined here, such as navigation viewcontrollers, storyboards... |
@@ -33,8 +33,10 @@ Table of Contents
 ## Workspace Preparing
 
 - On the directory of `{project_root}/scripts/installation`, via terminal
-	- run `./rename-project.swift "ios-boilerplate" "$NEW_PROJECT_NAME"` to change project name.
-	- run `sh install-githooks.sh` to install git-hooks into your project. Git hooks include SwiftLint validation, git message character limitation and issue-id check
+	- run `./rename-project.swift "$NEW_PROJECT_NAME"` to change project name.
+	- run `sh install-githooks.sh` to install git-hooks into your project. Includes following git hooks; Git hooks include SwiftLint validation, git message character limitation and issue-id check
+		- pre-commit: This hook provides swiftlint control to detect errors quickly before commit.
+		- commit-msg: This hook checks that messages must have a minimum 50 characters. It also tells it should contain an issue tag. Ticket id must be between square brackets and [ticketid] separated by hyphens. See example: "[ISSUE-123] commit message" or "[JIRA-56] - commit message"
 	
 - On your project root via terminal
 	- run `pod install` - this command will regenerate workspace with Xcode.
@@ -45,10 +47,10 @@ Table of Contents
 
 | Framework | Description |
 | ------------------------------- | --------------------------------------------------------------------- |
-| SwiftLint | A tool to enforce Swift style and conventions. |
-| Swifter | Tiny http server engine written in Swift programming language. |
-| CocoaLumberJack | Powerful & flexible logging framework. |
-| CocoaDebug | iOS debugging tool. |
+| [SwiftLint](https://github.com/realm/SwiftLint) | A tool to enforce Swift style and conventions. |
+| [Swifter](https://github.com/SwifterSwift/SwifterSwift) | Tiny http server engine written in Swift programming language. |
+| [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack) | Powerful & flexible logging framework. |
+| [CocoaDebug](https://github.com/CocoaDebug/CocoaDebug) | iOS debugging tool. |
 
 ## Useful Tools and Resources
 
