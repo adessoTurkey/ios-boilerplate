@@ -1,3 +1,7 @@
+[![swift-version](https://img.shields.io/badge/swift-5.2-brightgreen.svg)](https://github.com/apple/swift)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+
 iOS Boilerplate
 ============================
 
