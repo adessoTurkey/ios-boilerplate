@@ -1,0 +1,25 @@
+name: iOS Build Check Workflow
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  build:
+    name: Build scheme 
+    runs-on: macos-latest
+
+    steps:
+      - name: Set XCode Version
+        run: sudo xcode-select -s /Applications/Xcode_12.app
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: |
+          pod install --repo-update
+        shell: bash
+      - name: Build
+        run: |
+          xcodebuild -workspace ios-boilerplate.xcworkspace -scheme ios-boilerplate clean build -sdk iphoneos -configuration Development CODE_SIGNING_ALLOWED=No          
