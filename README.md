@@ -63,6 +63,10 @@ Table of Contents
 - [TestFlight](https://help.apple.com/itunes-connect/developer/#/devdc42b26b8) - TestFlight beta testing lets you distribute beta builds of your app to testers and collect feedback.
 - [Appcenter](https://appcenter.ms/) - Continuously build, test, release, and monitor apps for every platform.
 
+## Join the crew!
+
+[Act now to join][linkedin/jobs] our team and become an adessi — enjoy a Great Place to Work!
+
 ## License
 
 ```
@@ -80,3 +84,5 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
+[linkedin/jobs]: https://www.linkedin.com/jobs/view/1989162077
