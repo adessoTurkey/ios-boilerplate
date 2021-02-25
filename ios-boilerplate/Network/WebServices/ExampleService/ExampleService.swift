@@ -13,24 +13,26 @@ protocol ExampleServiceProtocol {
     func exampleRequest() -> Single<ExampleResponse?>
 }
 
-class ExampleService: BaseService, ExampleServiceProtocol {
+class ExampleService: ExampleServiceProtocol {
 
     private struct Constants {
         static let baseUrl = ""
     }
 
     private let endpointBuilder: EndpointBuilder
+    private let baseService: BaseServiceProtocol
 
-    init() {
-        endpointBuilder = EndpointBuilder()
-        super.init()
+    init(baseService: BaseServiceProtocol = BaseServiceProvider.shared.baseService,
+         endpointBuilder: EndpointBuilder = EndpointBuilder()) {
+        self.baseService = baseService
+        self.endpointBuilder = endpointBuilder
     }
 
     func exampleRequest() -> Single<ExampleResponse?> {
         let endpoint =  endpointBuilder.build(with: ExampleServiceEnpoint.example(firstParameter: "firstParameter",
                                                                                   secondParameter: "secondParameter"))
 
-        return request(with: RequestObject(baseUrl: Constants.baseUrl,
-                                           endpoint: endpoint))
+        return baseService.request(with: RequestObject(baseUrl: Constants.baseUrl,
+                                                       endpoint: endpoint))
     }
 }
