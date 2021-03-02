@@ -15,7 +15,10 @@ target 'ios-boilerplate' do
   pod 'Swifter', '~> 1.5.0', :configurations => ['Swifter']
   pod 'CocoaDebug', '1.4.8', :configurations => ['Development','Swifter']
   pod 'CocoaLumberjack/Swift' # Powerful & flexible logging framework
-
+  pod 'Alamofire' , '~> 5.1.0'
+  pod 'CodableAlamofire', '~> 1.2.1'
+  pod 'RxSwift'
+  
   target 'ios-boilerplateTests' do
     inherit! :search_paths
     # Pods for testing
