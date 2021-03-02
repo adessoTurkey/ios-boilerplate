@@ -1,5 +1,5 @@
 //
-//  ExampleServiceEnpoint.swift
+//  ExampleServiceEndpoint.swift
 //  ios-boilerplate
 //
 //  Created by developer on 29.12.2020.
@@ -18,7 +18,7 @@ enum ExampleServiceEndpoint: TargetEndpointProtocol {
     var path: String {
         switch self {
             case .example(let firstParameter, let secondParameter):
-                return String(format: Constants.exampleEndpoint, firstParameter, secondParameter) // Constants.exampleEndpoint + firstParameter + "/" + secondParameter
+                return String(format: Constants.exampleEndpoint, firstParameter, secondParameter)
         }
     }
 }
