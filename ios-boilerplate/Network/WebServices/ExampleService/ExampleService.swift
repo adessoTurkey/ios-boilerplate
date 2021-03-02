@@ -29,7 +29,7 @@ class ExampleService: ExampleServiceProtocol {
     }
 
     func exampleRequest() -> Single<ExampleResponse?> {
-        let endpoint =  endpointBuilder.build(with: ExampleServiceEnpoint.example(firstParameter: "firstParameter",
+        let endpoint =  endpointBuilder.build(with: ExampleServiceEndpoint.example(firstParameter: "firstParameter",
                                                                                   secondParameter: "secondParameter"))
 
         return baseService.request(with: RequestObject(baseUrl: Constants.baseUrl,

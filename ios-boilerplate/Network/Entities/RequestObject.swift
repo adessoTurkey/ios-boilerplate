@@ -10,16 +10,17 @@ import Alamofire
 import Foundation
 
 class RequestObject {
-    var url: String {
-        baseUrl + endpoint
-    }
     private let baseUrl: String
     private let endpoint: String
+
     let method: HTTPMethod
     var data: Encodable?
     var encoding: URLEncoding
     var headers: HTTPHeaders?
     var requestInterceptor: RequestInterceptor?
+    var url: String {
+        baseUrl + endpoint
+    }
 
     init(baseUrl: String,
          endpoint: String,

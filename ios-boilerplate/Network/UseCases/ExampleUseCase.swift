@@ -10,13 +10,13 @@ import Foundation
 import RxSwift
 
 protocol ExampleServiceAdapterProtocol {
-    func exampleRequest() -> Single<ExampleResponse?>
+    func fetchExample() -> Single<ExampleResponse?>
 }
 
 class ExampleServiceRepository: ExampleServiceAdapterProtocol {
-    var service: ExampleServiceProtocol = ExampleService()
-    
-    func exampleRequest() -> Single<ExampleResponse?> {
-        service.exampleRequest()
+    let exampleRepository: ExampleRepository = ExampleRepository()
+
+    func fetchExample() -> Single<ExampleResponse?> {
+        exampleRepository.getExample()
     }
 }

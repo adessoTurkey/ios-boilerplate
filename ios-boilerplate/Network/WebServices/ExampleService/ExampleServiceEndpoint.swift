@@ -8,17 +8,17 @@
 
 import Foundation
 
-enum ExampleServiceEnpoint: TargetEndpointProtocol {
+enum ExampleServiceEndpoint: TargetEndpointProtocol {
     case example(firstParameter: String, secondParameter: String)
 
     private struct Constants {
-        static let exampleEndpoint = "exampleEndpoint/"
+        static let exampleEndpoint = "exampleEndpoint/%@/%@"
     }
 
     var path: String {
         switch self {
             case .example(let firstParameter, let secondParameter):
-                return Constants.exampleEndpoint + firstParameter + "/" + secondParameter
+                return String(format: Constants.exampleEndpoint, firstParameter, secondParameter) // Constants.exampleEndpoint + firstParameter + "/" + secondParameter
         }
     }
 }
