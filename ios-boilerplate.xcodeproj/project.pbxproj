@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2655D48B2679303600E08C2F /* UIViewController+NavigationItemTapTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655D48A2679303600E08C2F /* UIViewController+NavigationItemTapTest.swift */; };
+		2655D4902679307B00E08C2F /* UIViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655D48F2679307B00E08C2F /* UIViewControllerTest.swift */; };
+		2655D4962679329700E08C2F /* UIAlertActionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655D4952679329700E08C2F /* UIAlertActionTest.swift */; };
+		2655D49E267932E300E08C2F /* UIColorComparisonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655D49D267932E300E08C2F /* UIColorComparisonTest.swift */; };
+		2655D4A32679334700E08C2F /* UITableViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655D4A22679334700E08C2F /* UITableViewControllerTest.swift */; };
+		2655D4B42679348E00E08C2F /* UIViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655D4B32679348E00E08C2F /* UIViewTest.swift */; };
+		2655D4C52679360200E08C2F /* SnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655D4C42679360200E08C2F /* SnapshotTestCase.swift */; };
+		2655D4E2267938CB00E08C2F /* XCTestCase+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655D4E1267938CB00E08C2F /* XCTestCase+Additions.swift */; };
 		26BCDA102579826700096894 /* LoggerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BCDA0F2579826700096894 /* LoggerManager.swift */; };
 		26BCDA202579833600096894 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BCDA1F2579833600096894 /* Logger.swift */; };
 		26BCDA252579852700096894 /* LoggingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BCDA242579852700096894 /* LoggingService.swift */; };
@@ -58,6 +66,14 @@
 /* Begin PBXFileReference section */
 		038895AE68B1731C6E7264B1 /* Pods-ios-boilerplateTests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplateTests.production.xcconfig"; path = "Target Support Files/Pods-ios-boilerplateTests/Pods-ios-boilerplateTests.production.xcconfig"; sourceTree = "<group>"; };
 		0E0BED62A6EC7D6FE2A7AAA1 /* Pods-ios-boilerplate-ios-boilerplateUITests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate-ios-boilerplateUITests.appstore.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests.appstore.xcconfig"; sourceTree = "<group>"; };
+		2655D48A2679303600E08C2F /* UIViewController+NavigationItemTapTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationItemTapTest.swift"; sourceTree = "<group>"; };
+		2655D48F2679307B00E08C2F /* UIViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerTest.swift; sourceTree = "<group>"; };
+		2655D4952679329700E08C2F /* UIAlertActionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertActionTest.swift; sourceTree = "<group>"; };
+		2655D49D267932E300E08C2F /* UIColorComparisonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorComparisonTest.swift; sourceTree = "<group>"; };
+		2655D4A22679334700E08C2F /* UITableViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewControllerTest.swift; sourceTree = "<group>"; };
+		2655D4B32679348E00E08C2F /* UIViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewTest.swift; sourceTree = "<group>"; };
+		2655D4C42679360200E08C2F /* SnapshotTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTestCase.swift; sourceTree = "<group>"; };
+		2655D4E1267938CB00E08C2F /* XCTestCase+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Additions.swift"; sourceTree = "<group>"; };
 		26BCDA0F2579826700096894 /* LoggerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerManager.swift; sourceTree = "<group>"; };
 		26BCDA1F2579833600096894 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		26BCDA242579852700096894 /* LoggingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingService.swift; sourceTree = "<group>"; };
@@ -165,6 +181,21 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		2655D4942679320400E08C2F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2655D4952679329700E08C2F /* UIAlertActionTest.swift */,
+				2655D48A2679303600E08C2F /* UIViewController+NavigationItemTapTest.swift */,
+				2655D48F2679307B00E08C2F /* UIViewControllerTest.swift */,
+				2655D49D267932E300E08C2F /* UIColorComparisonTest.swift */,
+				2655D4A22679334700E08C2F /* UITableViewControllerTest.swift */,
+				2655D4B32679348E00E08C2F /* UIViewTest.swift */,
+				2655D4C42679360200E08C2F /* SnapshotTestCase.swift */,
+				2655D4E1267938CB00E08C2F /* XCTestCase+Additions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		26BCDA36257A398600096894 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +268,7 @@
 		2FCDE10B2565722600203445 /* ios-boilerplateTests */ = {
 			isa = PBXGroup;
 			children = (
+				2655D4942679320400E08C2F /* Helpers */,
 				2FCDE10C2565722600203445 /* ios_boilerplateTests.swift */,
 				2FCDE10E2565722600203445 /* Info.plist */,
 			);
@@ -351,6 +383,7 @@
 				2FCDE1042565722600203445 /* Sources */,
 				2FCDE1052565722600203445 /* Frameworks */,
 				2FCDE1062565722600203445 /* Resources */,
+				D39E5ED887D585813FE415EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -536,6 +569,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D39E5ED887D585813FE415EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-boilerplateTests/Pods-ios-boilerplateTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-boilerplateTests/Pods-ios-boilerplateTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-boilerplateTests/Pods-ios-boilerplateTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E3291048690177CBFDC3248D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -606,7 +656,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2655D49E267932E300E08C2F /* UIColorComparisonTest.swift in Sources */,
+				2655D4E2267938CB00E08C2F /* XCTestCase+Additions.swift in Sources */,
 				2FCDE10D2565722600203445 /* ios_boilerplateTests.swift in Sources */,
+				2655D48B2679303600E08C2F /* UIViewController+NavigationItemTapTest.swift in Sources */,
+				2655D4B42679348E00E08C2F /* UIViewTest.swift in Sources */,
+				2655D4A32679334700E08C2F /* UITableViewControllerTest.swift in Sources */,
+				2655D4C52679360200E08C2F /* SnapshotTestCase.swift in Sources */,
+				2655D4962679329700E08C2F /* UIAlertActionTest.swift in Sources */,
+				2655D4902679307B00E08C2F /* UIViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

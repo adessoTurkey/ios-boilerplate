@@ -19,6 +19,7 @@ target 'ios-boilerplate' do
   target 'ios-boilerplateTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'SnapshotTesting', '~> 1.8.1' # A tool for Swift Snapshot testing.
   end
 
   target 'ios-boilerplateUITests' do
