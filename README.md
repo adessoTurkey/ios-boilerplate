@@ -29,7 +29,7 @@ Table of Contents
 | **Application/Services**/ | Application based services will be defined here, such as logging, network, server... |
 | **Configs**/ | Everything relative to build and environment configuration will be defined here |
 | **Managers**/ | Managers will be put here such as LoggerManager, UtilityManager... |
-| **Network**/ | Network related implementations will be defined here |
+| **Network**/ | Network related implementations will be defined here. You can find network related developments under feature/adesso-network branch. If you want to use it, you can merge it to develop easily. |
 | **Scenes**/ | Application related scenes will be defined here, such as navigation viewcontrollers, storyboards... |
 | **Utility**/ | Extensions, final classes etc. will be putt here  |
 | **Resources**/ | Images, icons, assets, fonts, Mocks, `Localizable.strings`... 
@@ -85,4 +85,4 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
-[linkedin/jobs]: https://www.linkedin.com/jobs/view/1989162077
+[linkedin/jobs]: https://www.linkedin.com/company/adessoturkey/jobs/
