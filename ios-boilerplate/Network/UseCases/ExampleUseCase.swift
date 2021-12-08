@@ -9,12 +9,16 @@
 import Foundation
 import RxSwift
 
-protocol ExampleServiceAdapterProtocol {
+protocol ExampleUseCaseProtocol {
     func fetchExample() -> Single<ExampleResponse?>
 }
 
-class ExampleServiceRepository: ExampleServiceAdapterProtocol {
-    let exampleRepository: ExampleRepository = ExampleRepository()
+class ExampleUseCase: ExampleUseCaseProtocol {
+    let exampleRepository: ExampleRepositoryProtocol
+
+    init(exampleRepository: ExampleRepositoryProtocol = ExampleRepository()) {
+        self.exampleRepository = exampleRepository
+    }
 
     func fetchExample() -> Single<ExampleResponse?> {
         exampleRepository.getExample()

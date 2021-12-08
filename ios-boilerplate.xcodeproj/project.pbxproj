@@ -35,6 +35,12 @@
 		2FCDE10D2565722600203445 /* ios_boilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCDE10C2565722600203445 /* ios_boilerplateTests.swift */; };
 		2FCDE1182565722600203445 /* ios_boilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCDE1172565722600203445 /* ios_boilerplateUITests.swift */; };
 		2FCDE1572566AE2700203445 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCDE1562566AE2700203445 /* UITableViewExtensions.swift */; };
+		337B891C27612D3E00C03FA3 /* AdessoServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B891B27612D3E00C03FA3 /* AdessoServiceProtocol.swift */; };
+		337B892227612E6200C03FA3 /* BaseEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B892127612E6200C03FA3 /* BaseEndpoint.swift */; };
+		337B892927612F6E00C03FA3 /* RequestAdapters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B892827612F6E00C03FA3 /* RequestAdapters.swift */; };
+		337B893F2761312900C03FA3 /* RequestRetriers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B893E2761312900C03FA3 /* RequestRetriers.swift */; };
+		337B89452761315D00C03FA3 /* ExampleRequestRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B89442761315D00C03FA3 /* ExampleRequestRetrier.swift */; };
+		337B894A2761317000C03FA3 /* ExampleRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B89492761317000C03FA3 /* ExampleRequestAdapter.swift */; };
 		818A45ED26FF9C2417D7FE06 /* Pods_ios_boilerplate_ios_boilerplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FFC6E99FDD56F5EA69E71AC /* Pods_ios_boilerplate_ios_boilerplateUITests.framework */; };
 		8B00B3BE25979D0F004974AE /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B00B3BD25979D0F004974AE /* BaseService.swift */; };
 		8B00B3D625979DF2004974AE /* AdessoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B00B3D525979DF2004974AE /* AdessoError.swift */; };
@@ -45,8 +51,6 @@
 		8B00B3FC2597A5A5004974AE /* HTTPURLResponseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B00B3FB2597A5A5004974AE /* HTTPURLResponseExtensions.swift */; };
 		8B7B48D225E7CD930086224A /* BaseServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7B48D125E7CD930086224A /* BaseServiceProvider.swift */; };
 		8B7B48E525E7CE5E0086224A /* WebServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7B48E425E7CE5E0086224A /* WebServiceProvider.swift */; };
-		8BCBAC74259DB1B50048AB8E /* HeaderBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCBAC73259DB1B50048AB8E /* HeaderBuilderProtocol.swift */; };
-		8BCBAC7D259DB1D90048AB8E /* HeaderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCBAC7C259DB1D90048AB8E /* HeaderBuilder.swift */; };
 		8BCBACA4259DB3970048AB8E /* HeaderBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCBACA3259DB3970048AB8E /* HeaderBuilderTests.swift */; };
 		8BDBB2B9259B3EB200CD74A5 /* ExampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBB2B8259B3EB200CD74A5 /* ExampleService.swift */; };
 		8BDBB2C6259B3F9400CD74A5 /* ExampleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBB2C5259B3F9400CD74A5 /* ExampleRepository.swift */; };
@@ -116,6 +120,12 @@
 		2FCDE1352566520A00203445 /* AppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore.xcconfig; sourceTree = "<group>"; };
 		2FCDE1562566AE2700203445 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		3108CDE6BAAB8A09231F387F /* Pods_ios_boilerplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_boilerplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		337B891B27612D3E00C03FA3 /* AdessoServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdessoServiceProtocol.swift; sourceTree = "<group>"; };
+		337B892127612E6200C03FA3 /* BaseEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEndpoint.swift; sourceTree = "<group>"; };
+		337B892827612F6E00C03FA3 /* RequestAdapters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAdapters.swift; sourceTree = "<group>"; };
+		337B893E2761312900C03FA3 /* RequestRetriers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRetriers.swift; sourceTree = "<group>"; };
+		337B89442761315D00C03FA3 /* ExampleRequestRetrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRequestRetrier.swift; sourceTree = "<group>"; };
+		337B89492761317000C03FA3 /* ExampleRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRequestAdapter.swift; sourceTree = "<group>"; };
 		5BBDD0933E5591FF8B818A13 /* Pods-ios-boilerplate.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate.appstore.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate/Pods-ios-boilerplate.appstore.xcconfig"; sourceTree = "<group>"; };
 		5ECE10E56C75EDE88769624B /* Pods-ios-boilerplate-ios-boilerplateUITests.swifter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate-ios-boilerplateUITests.swifter.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests.swifter.xcconfig"; sourceTree = "<group>"; };
 		617AC37E5A08CF641E816634 /* Pods-ios-boilerplate-ios-boilerplateUITests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate-ios-boilerplateUITests.development.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests.development.xcconfig"; sourceTree = "<group>"; };
@@ -133,8 +143,6 @@
 		8B00B3FB2597A5A5004974AE /* HTTPURLResponseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPURLResponseExtensions.swift; sourceTree = "<group>"; };
 		8B7B48D125E7CD930086224A /* BaseServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceProvider.swift; sourceTree = "<group>"; };
 		8B7B48E425E7CE5E0086224A /* WebServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceProvider.swift; sourceTree = "<group>"; };
-		8BCBAC73259DB1B50048AB8E /* HeaderBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderBuilderProtocol.swift; sourceTree = "<group>"; };
-		8BCBAC7C259DB1D90048AB8E /* HeaderBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderBuilder.swift; sourceTree = "<group>"; };
 		8BCBACA3259DB3970048AB8E /* HeaderBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderBuilderTests.swift; sourceTree = "<group>"; };
 		8BDBB2B8259B3EB200CD74A5 /* ExampleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleService.swift; sourceTree = "<group>"; };
 		8BDBB2C5259B3F9400CD74A5 /* ExampleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRepository.swift; sourceTree = "<group>"; };
@@ -370,11 +378,47 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		337B892027612E5700C03FA3 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				337B892127612E6200C03FA3 /* BaseEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		337B892727612F6200C03FA3 /* Interceptors */ = {
+			isa = PBXGroup;
+			children = (
+				337B89432761314F00C03FA3 /* RequestRetriers */,
+				337B893527612FC700C03FA3 /* RequestAdapters */,
+				337B892827612F6E00C03FA3 /* RequestAdapters.swift */,
+				337B893E2761312900C03FA3 /* RequestRetriers.swift */,
+			);
+			path = Interceptors;
+			sourceTree = "<group>";
+		};
+		337B893527612FC700C03FA3 /* RequestAdapters */ = {
+			isa = PBXGroup;
+			children = (
+				337B89492761317000C03FA3 /* ExampleRequestAdapter.swift */,
+			);
+			path = RequestAdapters;
+			sourceTree = "<group>";
+		};
+		337B89432761314F00C03FA3 /* RequestRetriers */ = {
+			isa = PBXGroup;
+			children = (
+				337B89442761315D00C03FA3 /* ExampleRequestRetrier.swift */,
+			);
+			path = RequestRetriers;
+			sourceTree = "<group>";
+		};
 		8B00B3BC25979D03004974AE /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				337B892727612F6200C03FA3 /* Interceptors */,
+				337B892027612E5700C03FA3 /* Endpoints */,
 				8B7B48D025E7CD640086224A /* Base */,
-				8BCBAC72259DB1A40048AB8E /* HeaderBuilder */,
 				8BDBB2EE259B449E00CD74A5 /* URLBuilder */,
 				8BDBB2D6259B418900CD74A5 /* ResponseModels */,
 				8BDBB2BE259B3ECA00CD74A5 /* WebServiceRepositories */,
@@ -412,17 +456,9 @@
 			children = (
 				8B00B3BD25979D0F004974AE /* BaseService.swift */,
 				8B7B48D125E7CD930086224A /* BaseServiceProvider.swift */,
+				337B891B27612D3E00C03FA3 /* AdessoServiceProtocol.swift */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		8BCBAC72259DB1A40048AB8E /* HeaderBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				8BCBAC73259DB1B50048AB8E /* HeaderBuilderProtocol.swift */,
-				8BCBAC7C259DB1D90048AB8E /* HeaderBuilder.swift */,
-			);
-			path = HeaderBuilder;
 			sourceTree = "<group>";
 		};
 		8BCBAC93259DB31F0048AB8E /* NetworkTests */ = {
@@ -754,9 +790,12 @@
 				8B7B48E525E7CE5E0086224A /* WebServiceProvider.swift in Sources */,
 				18F06B9B25EE1D4800CAFA0B /* ExampleUseCase.swift in Sources */,
 				8BDBB301259B4C8400CD74A5 /* TargetEndpointProtocol.swift in Sources */,
+				337B891C27612D3E00C03FA3 /* AdessoServiceProtocol.swift in Sources */,
 				2F56AE8E256E487F0007D0A2 /* StringExtensions.swift in Sources */,
+				337B894A2761317000C03FA3 /* ExampleRequestAdapter.swift in Sources */,
 				2F56AE8A256E44BB0007D0A2 /* UICollectionViewCellExtensions.swift in Sources */,
 				26BCDA2A2579857E00096894 /* UIApplicationExtension.swift in Sources */,
+				337B892927612F6E00C03FA3 /* RequestAdapters.swift in Sources */,
 				26C4C62525769BE400358DAE /* Configuration.swift in Sources */,
 				8B00B3D625979DF2004974AE /* AdessoError.swift in Sources */,
 				8B00B3BE25979D0F004974AE /* BaseService.swift in Sources */,
@@ -765,22 +804,23 @@
 				8BDBB2B9259B3EB200CD74A5 /* ExampleService.swift in Sources */,
 				8BDBB2F9259B4C2900CD74A5 /* ExampleServiceEndpoint.swift in Sources */,
 				8BDBB2D8259B419500CD74A5 /* ExampleResponse.swift in Sources */,
-				8BCBAC7D259DB1D90048AB8E /* HeaderBuilder.swift in Sources */,
 				26BCDA102579826700096894 /* LoggerManager.swift in Sources */,
 				8B00B3F725979EC2004974AE /* ErrorResponse.swift in Sources */,
+				337B89452761315D00C03FA3 /* ExampleRequestRetrier.swift in Sources */,
 				8BDBB2F0259B44AB00CD74A5 /* EndpointBuilder.swift in Sources */,
 				18F06BA125EE1EE100CAFA0B /* ExampleRemoteDataSource.swift in Sources */,
+				337B892227612E6200C03FA3 /* BaseEndpoint.swift in Sources */,
 				8B00B3E025979E2C004974AE /* RequestObject.swift in Sources */,
 				8BDBB2C6259B3F9400CD74A5 /* ExampleRepository.swift in Sources */,
 				26C4C58A25766B6100358DAE /* SwifterManager.swift in Sources */,
 				2FCDE0F82565722400203445 /* SceneDelegate.swift in Sources */,
 				26BCDA202579833600096894 /* Logger.swift in Sources */,
 				2FCDE1572566AE2700203445 /* UITableViewExtensions.swift in Sources */,
+				337B893F2761312900C03FA3 /* RequestRetriers.swift in Sources */,
 				2F56AE88256E44A10007D0A2 /* UITableViewCellExtensions.swift in Sources */,
 				8B7B48D225E7CD930086224A /* BaseServiceProvider.swift in Sources */,
 				8B00B3FC2597A5A5004974AE /* HTTPURLResponseExtensions.swift in Sources */,
 				26BCDA2F2579859500096894 /* UIDeviceExtension.swift in Sources */,
-				8BCBAC74259DB1B50048AB8E /* HeaderBuilderProtocol.swift in Sources */,
 				8B00B3DB25979E1C004974AE /* HTTPStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,26 +13,22 @@ protocol ExampleServiceProtocol {
     func exampleRequest() -> Single<ExampleResponse?>
 }
 
-class ExampleService: ExampleServiceProtocol {
+class ExampleService: ExampleServiceProtocol, AdessoServiceProtocol {
+    typealias Endpoint = ExampleServiceEndpoint
 
-    private struct Constants {
-        static let baseUrl = ""
-    }
+    let baseService: BaseServiceProtocol
 
-    private let endpointBuilder: EndpointBuilder
-    private let baseService: BaseServiceProtocol
-
-    init(baseService: BaseServiceProtocol = BaseServiceProvider.shared.baseService,
-         endpointBuilder: EndpointBuilder = EndpointBuilder()) {
+    init(baseService: BaseServiceProtocol = BaseServiceProvider.shared.baseService) {
         self.baseService = baseService
-        self.endpointBuilder = endpointBuilder
     }
 
     func exampleRequest() -> Single<ExampleResponse?> {
-        let endpoint =  endpointBuilder.build(with: ExampleServiceEndpoint.example(firstParameter: "firstParameter",
-                                                                                  secondParameter: "secondParameter"))
+        request(with: RequestObject(url: build(endpoint: .example(firstParameter: "firstParameter",
+                                                                  secondParameter: "secondParameter"))))
+    }
 
-        return baseService.request(with: RequestObject(baseUrl: Constants.baseUrl,
-                                                       endpoint: endpoint))
+    func exampleAuthenticatedRequest() -> Single<ExampleResponse?> {
+        authenticatedRequest(with: RequestObject(url: build(endpoint: .example(firstParameter: "firstParameter",
+                                                                               secondParameter: "secondParameter"))))
     }
 }

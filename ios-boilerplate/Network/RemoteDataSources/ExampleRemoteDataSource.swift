@@ -9,8 +9,16 @@
 import Foundation
 import RxSwift
 
-class ExampleRemoteDataSource {
-    var exampleService: ExampleServiceProtocol = WebServiceProvider.shared.exampleService
+protocol ExampleRemoteDataSourceProtocol {
+    func getExample() -> Single<ExampleResponse?>
+}
+
+class ExampleRemoteDataSource: ExampleRemoteDataSourceProtocol {
+    let exampleService: ExampleServiceProtocol
+
+    init(exampleService: ExampleServiceProtocol = WebServiceProvider.shared.exampleService) {
+        self.exampleService = exampleService
+    }
 
     func getExample() -> Single<ExampleResponse?> {
         exampleService.exampleRequest()

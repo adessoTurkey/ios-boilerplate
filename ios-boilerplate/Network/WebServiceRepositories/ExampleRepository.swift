@@ -14,7 +14,11 @@ protocol ExampleRepositoryProtocol {
 }
 
 class ExampleRepository: ExampleRepositoryProtocol {
-    let exampleRemoteDataSource: ExampleRemoteDataSource = ExampleRemoteDataSource()
+    let exampleRemoteDataSource: ExampleRemoteDataSourceProtocol
+
+    init(exampleRemoteDataSource: ExampleRemoteDataSourceProtocol = ExampleRemoteDataSource()) {
+        self.exampleRemoteDataSource = exampleRemoteDataSource
+    }
 
     func getExample() -> Single<ExampleResponse?> {
         exampleRemoteDataSource.getExample()

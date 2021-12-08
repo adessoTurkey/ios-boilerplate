@@ -12,22 +12,14 @@ import CodableAlamofire
 import Alamofire
 
 protocol BaseServiceProtocol {
-    func authenticatedRequest<T: Decodable>(with requestObject: RequestObject) -> Single<T>
     func request<T: Decodable>(with requestObject: RequestObject) -> Single<T>
 }
 
-public class BaseService: BaseServiceProtocol {
-
-    private let headerBuilder: HeaderBuilderProtocol
-
-    init(headerBuilder: HeaderBuilderProtocol = HeaderBuilder()) {
-        self.headerBuilder = headerBuilder
-    }
+class BaseService: BaseServiceProtocol {
 
     @discardableResult
     func request<T: Decodable>(with requestObject: RequestObject) -> Single<T> {
-        requestObject.headers = createDefault(headers: requestObject.headers ?? [:])
-        return Observable<T>.create { [weak self] observer in
+        Observable<T>.create { [weak self] observer in
             guard let self = self else {
                 Logger().log(level: .debug, message: "Unexpected Error")
                 observer.onError(AdessoError.customError(0, "Unexpected Error"))
@@ -36,23 +28,6 @@ public class BaseService: BaseServiceProtocol {
             self.request(with: requestObject)
                 .responseDecodableObject { (response: AFDataResponse<T>) in
                     self.handle(with: response, observer: observer)
-                }
-            return Disposables.create()
-        }.share().asSingle()
-    }
-
-    @discardableResult
-    func authenticatedRequest<T: Decodable>(with requestObject: RequestObject) -> Single<T> {
-        requestObject.headers = createAuthentication(headers: requestObject.headers ?? [:])
-        return Observable<T>.create { [weak self] observer in
-            guard let self = self else {
-                Logger().log(level: .debug, message: "Unexpected Error")
-                observer.onError(AdessoError.customError(0, "Unexpected Error"))
-                return Disposables.create()
-            }
-            self.request(with: requestObject)
-                .responseDecodableObject { (response: AFDataResponse<T>) in
-                    self.handle(with: response, observer: observer )
                 }
             return Disposables.create()
         }.share().asSingle()
@@ -83,17 +58,5 @@ public class BaseService: BaseServiceProtocol {
         } else {
             observer.onError(AdessoError.unknown(error: error as NSError))
         }
-    }
-
-    private func createAuthentication(headers: HTTPHeaders) -> HTTPHeaders {
-        headerBuilder
-            .prepareAuthenticationHeaders(with: headers)
-            .build()
-    }
-
-    private func createDefault(headers: HTTPHeaders) -> HTTPHeaders {
-        headerBuilder
-            .prepareDefaultHeaders(with: headers)
-            .build()
     }
 }
