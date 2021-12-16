@@ -7,10 +7,10 @@
 //
 
 import Foundation
-import RxSwift
+import Combine
 
 protocol ExampleUseCaseProtocol {
-    func fetchExample() -> Single<ExampleResponse?>
+    func fetchExample() -> AnyPublisher<ExampleResponse?, AdessoError>
 }
 
 class ExampleUseCase: ExampleUseCaseProtocol {
@@ -20,7 +20,7 @@ class ExampleUseCase: ExampleUseCaseProtocol {
         self.exampleRepository = exampleRepository
     }
 
-    func fetchExample() -> Single<ExampleResponse?> {
+    func fetchExample() -> AnyPublisher<ExampleResponse?, AdessoError> {
         exampleRepository.getExample()
     }
 }

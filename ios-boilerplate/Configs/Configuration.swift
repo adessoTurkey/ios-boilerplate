@@ -35,7 +35,7 @@ final class Configuration {
     }
 
     static var baseURL: String {
-        return ""
+        ""
     }
 
 }

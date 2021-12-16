@@ -17,7 +17,6 @@ target 'ios-boilerplate' do
   pod 'CocoaLumberjack/Swift' # Powerful & flexible logging framework
   pod 'Alamofire' , '~> 5.1.0'
   pod 'CodableAlamofire', '~> 1.2.1'
-  pod 'RxSwift'
   
   target 'ios-boilerplateTests' do
     inherit! :search_paths

@@ -7,10 +7,10 @@
 //
 
 import Foundation
-import RxSwift
+import Combine
 
 protocol ExampleServiceProtocol {
-    func exampleRequest() -> Single<ExampleResponse?>
+    func exampleRequest() -> AnyPublisher<ExampleResponse?, AdessoError>
 }
 
 class ExampleService: ExampleServiceProtocol, AdessoServiceProtocol {
@@ -22,12 +22,12 @@ class ExampleService: ExampleServiceProtocol, AdessoServiceProtocol {
         self.baseService = baseService
     }
 
-    func exampleRequest() -> Single<ExampleResponse?> {
+    func exampleRequest() -> AnyPublisher<ExampleResponse?, AdessoError> {
         request(with: RequestObject(url: build(endpoint: .example(firstParameter: "firstParameter",
                                                                   secondParameter: "secondParameter"))))
     }
 
-    func exampleAuthenticatedRequest() -> Single<ExampleResponse?> {
+    func exampleAuthenticatedRequest() -> AnyPublisher<ExampleResponse?, AdessoError> {
         authenticatedRequest(with: RequestObject(url: build(endpoint: .example(firstParameter: "firstParameter",
                                                                                secondParameter: "secondParameter"))))
     }

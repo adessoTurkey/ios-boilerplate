@@ -7,10 +7,10 @@
 //
 
 import Foundation
-import RxSwift
+import Combine
 
 protocol ExampleRemoteDataSourceProtocol {
-    func getExample() -> Single<ExampleResponse?>
+    func getExample() -> AnyPublisher<ExampleResponse?, AdessoError>
 }
 
 class ExampleRemoteDataSource: ExampleRemoteDataSourceProtocol {
@@ -20,7 +20,7 @@ class ExampleRemoteDataSource: ExampleRemoteDataSourceProtocol {
         self.exampleService = exampleService
     }
 
-    func getExample() -> Single<ExampleResponse?> {
+    func getExample() -> AnyPublisher<ExampleResponse?, AdessoError> {
         exampleService.exampleRequest()
     }
 }

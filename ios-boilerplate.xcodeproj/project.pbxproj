@@ -41,6 +41,7 @@
 		337B893F2761312900C03FA3 /* RequestRetriers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B893E2761312900C03FA3 /* RequestRetriers.swift */; };
 		337B89452761315D00C03FA3 /* ExampleRequestRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B89442761315D00C03FA3 /* ExampleRequestRetrier.swift */; };
 		337B894A2761317000C03FA3 /* ExampleRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B89492761317000C03FA3 /* ExampleRequestAdapter.swift */; };
+		337B89F6276B624F00C03FA3 /* BaseServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B89F5276B624F00C03FA3 /* BaseServiceProtocol.swift */; };
 		818A45ED26FF9C2417D7FE06 /* Pods_ios_boilerplate_ios_boilerplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FFC6E99FDD56F5EA69E71AC /* Pods_ios_boilerplate_ios_boilerplateUITests.framework */; };
 		8B00B3BE25979D0F004974AE /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B00B3BD25979D0F004974AE /* BaseService.swift */; };
 		8B00B3D625979DF2004974AE /* AdessoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B00B3D525979DF2004974AE /* AdessoError.swift */; };
@@ -126,6 +127,7 @@
 		337B893E2761312900C03FA3 /* RequestRetriers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRetriers.swift; sourceTree = "<group>"; };
 		337B89442761315D00C03FA3 /* ExampleRequestRetrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRequestRetrier.swift; sourceTree = "<group>"; };
 		337B89492761317000C03FA3 /* ExampleRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRequestAdapter.swift; sourceTree = "<group>"; };
+		337B89F5276B624F00C03FA3 /* BaseServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceProtocol.swift; sourceTree = "<group>"; };
 		5BBDD0933E5591FF8B818A13 /* Pods-ios-boilerplate.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate.appstore.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate/Pods-ios-boilerplate.appstore.xcconfig"; sourceTree = "<group>"; };
 		5ECE10E56C75EDE88769624B /* Pods-ios-boilerplate-ios-boilerplateUITests.swifter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate-ios-boilerplateUITests.swifter.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests.swifter.xcconfig"; sourceTree = "<group>"; };
 		617AC37E5A08CF641E816634 /* Pods-ios-boilerplate-ios-boilerplateUITests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate-ios-boilerplateUITests.development.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests.development.xcconfig"; sourceTree = "<group>"; };
@@ -454,6 +456,7 @@
 		8B7B48D025E7CD640086224A /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				337B89F5276B624F00C03FA3 /* BaseServiceProtocol.swift */,
 				8B00B3BD25979D0F004974AE /* BaseService.swift */,
 				8B7B48D125E7CD930086224A /* BaseServiceProvider.swift */,
 				337B891B27612D3E00C03FA3 /* AdessoServiceProtocol.swift */,
@@ -813,6 +816,7 @@
 				8B00B3E025979E2C004974AE /* RequestObject.swift in Sources */,
 				8BDBB2C6259B3F9400CD74A5 /* ExampleRepository.swift in Sources */,
 				26C4C58A25766B6100358DAE /* SwifterManager.swift in Sources */,
+				337B89F6276B624F00C03FA3 /* BaseServiceProtocol.swift in Sources */,
 				2FCDE0F82565722400203445 /* SceneDelegate.swift in Sources */,
 				26BCDA202579833600096894 /* Logger.swift in Sources */,
 				2FCDE1572566AE2700203445 /* UITableViewExtensions.swift in Sources */,

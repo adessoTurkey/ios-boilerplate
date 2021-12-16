@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import RxSwift
 import Alamofire
+import Combine
 
 protocol AdessoServiceProtocol {
     associatedtype Endpoint: TargetEndpointProtocol
@@ -17,8 +17,8 @@ protocol AdessoServiceProtocol {
 
     func build(endpoint: Endpoint) -> String
     func build(requestAdapters: [Adapter], requestRetriers: [Retrier]) -> Interceptor
-    func request<T: Decodable>(with object: RequestObject) -> Single<T>
-    func authenticatedRequest<T: Decodable>(with requestObject: RequestObject) -> Single<T>
+    func request<T: Decodable>(with object: RequestObject) -> AnyPublisher<T, AdessoError>
+    func authenticatedRequest<T: Decodable>(with requestObject: RequestObject) -> AnyPublisher<T, AdessoError>
 }
 
 extension AdessoServiceProtocol {
@@ -34,11 +34,11 @@ extension AdessoServiceProtocol {
                     retriers: requestRetriers.map({ $0.build }))
     }
 
-    func request<T: Decodable>(with object: RequestObject) -> Single<T> {
+    func request<T: Decodable>(with object: RequestObject) -> AnyPublisher<T, AdessoError> {
         baseService.request(with: object)
     }
 
-    func authenticatedRequest<T: Decodable>(with requestObject: RequestObject) -> Single<T> {
+    func authenticatedRequest<T: Decodable>(with requestObject: RequestObject) -> AnyPublisher<T, AdessoError> {
         var requestObject = requestObject
         return baseService.request(with: prepareAuthenticatedRequest(with: &requestObject))
     }

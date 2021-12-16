@@ -7,30 +7,30 @@
 //
 
 import Foundation
-import RxSwift
 import CodableAlamofire
 import Alamofire
-
-protocol BaseServiceProtocol {
-    func request<T: Decodable>(with requestObject: RequestObject) -> Single<T>
-}
+import Combine
 
 class BaseService: BaseServiceProtocol {
 
-    @discardableResult
-    func request<T: Decodable>(with requestObject: RequestObject) -> Single<T> {
-        Observable<T>.create { [weak self] observer in
+    func request<T: Decodable>(with requestObject: RequestObject,
+                               receiveOn queue: DispatchQueue,
+                               retries: Int,
+                               decoder: JSONDecoder) -> AnyPublisher<T, AdessoError> {
+        Future<T, AdessoError> { [weak self] promise in
             guard let self = self else {
                 Logger().log(level: .debug, message: "Unexpected Error")
-                observer.onError(AdessoError.customError(0, "Unexpected Error"))
-                return Disposables.create()
+                return promise(.failure(AdessoError.customError(0, "Unexpected Error")))
             }
             self.request(with: requestObject)
-                .responseDecodableObject { (response: AFDataResponse<T>) in
-                    self.handle(with: response, observer: observer)
-                }
-            return Disposables.create()
-        }.share().asSingle()
+                .responseDecodableObject(decoder: decoder,
+                                         completionHandler: { (response: AFDataResponse<T>) in
+                    self.handle(with: response, promise: promise)
+                })
+        }
+        .retry(retries)
+        .receive(on: queue)
+        .eraseToAnyPublisher()
     }
 
     private func request(with requestObject: RequestObject) -> DataRequest {
@@ -42,21 +42,20 @@ class BaseService: BaseServiceProtocol {
                    interceptor: requestObject.requestInterceptor)
     }
 
-    private func handle<T>(with response: AFDataResponse<T>, observer: AnyObserver<T>) {
+    private func handle<T>(with response: AFDataResponse<T>, promise: Future<T, AdessoError>.Promise) {
         switch response.result {
             case .failure(let error):
-                handle(with: error, observer: observer, response: response.response, data: response.data)
+                handle(with: error, promise: promise, response: response.response, data: response.data)
             case .success(let value):
-                observer.onNext(value)
-                observer.onCompleted()
+                promise(.success(value))
         }
     }
 
-    private func handle<T>(with error: Error, observer: AnyObserver<T>, response: HTTPURLResponse?, data: Data?) {
+    private func handle<T>(with error: Error, promise: Future<T, AdessoError>.Promise, response: HTTPURLResponse?, data: Data?) {
         if let response = response, let httpStatus = response.httpStatus {
-            observer.onError(AdessoError.httpError(status: httpStatus, data: data))
+            promise(.failure(AdessoError.httpError(status: httpStatus, data: data)))
         } else {
-            observer.onError(AdessoError.unknown(error: error as NSError))
+            promise(.failure(AdessoError.unknown(error: error as NSError)))
         }
     }
 }

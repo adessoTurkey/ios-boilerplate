@@ -10,21 +10,21 @@ import Alamofire
 import Foundation
 
 struct RequestObject {
-    let method: HTTPMethod
     var url: String
+    let method: HTTPMethod
     var data: Encodable?
     var headers: HTTPHeaders?
     var encoding: URLEncoding
     var requestInterceptor: Interceptor?
 
-    init(method: HTTPMethod = .get,
-         url: String,
+    init(url: String,
+         method: HTTPMethod = .get,
          data: Encodable? = nil,
          headers: HTTPHeaders? = nil,
          encoding: URLEncoding = .default,
          requestInterceptor: Interceptor? = nil) {
-        self.method = method
         self.url = url
+        self.method = method
         self.data = data
         self.encoding = encoding
         self.requestInterceptor = requestInterceptor
