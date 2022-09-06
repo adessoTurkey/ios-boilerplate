@@ -10,7 +10,7 @@ import UIKit
 extension String {
 
     var localized: String {
-        NSLocalizedString(self, comment: "") //swiftlint:disable:this nslocalizedstring_key
+        NSLocalizedString(self, comment: "") // swiftlint:disable:this nslocalizedstring_key
     }
 
     static var empty: Self {

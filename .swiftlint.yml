@@ -45,7 +45,6 @@ opt_in_rules:
   - private_outlet
   - switch_case_on_newline
   - unneeded_parentheses_in_closure_argument
-  - weak_computed_property
   - control_statement
   - empty_count
   - trailing_newline

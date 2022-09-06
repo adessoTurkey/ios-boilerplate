@@ -18,9 +18,15 @@ Table of Contents
 
 ## Prerequisites
 
-- [MacOS Mojave (10.14.3 or higher)](https://support.apple.com/kb/SP777)
-- [Xcode 11 or higher](https://developer.apple.com/download/) ~ Swift 5.0
+- [MacOS Big Sur (11.5 or higher)](https://support.apple.com/kb/SP777)
+- [Xcode 13 or higher](https://developer.apple.com/download/) ~ Swift 5.0
 - [CocoaPods 1.4.0 or higher](https://cocoapods.org/#install)
+- [Swiftlint (for installation please check swiftlint installation)](https://github.com/realm/SwiftLint)
+
+## Swiftlint Installation 
+
+- On the directory of `{project_root}/scripts/installation`, via terminal
+    - run `sh swiftlint.sh` to install brew (if necessary) and swiftlint.
 
 ## Project Structure
 
