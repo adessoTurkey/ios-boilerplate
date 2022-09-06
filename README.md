@@ -21,7 +21,7 @@ Table of Contents
 - [MacOS Big Sur (11.5 or higher)](https://support.apple.com/kb/SP777)
 - [Xcode 13 or higher](https://developer.apple.com/download/) ~ Swift 5.0
 - [CocoaPods 1.4.0 or higher](https://cocoapods.org/#install)
-- [Swiftlint (for installation please check swiftlint installation)](https://github.com/realm/SwiftLint)
+- Swiftlint - To Install SwiftLint, please check Swiftlint Installation section from read me file 
 
 ## Swiftlint Installation 
 
@@ -43,15 +43,15 @@ Table of Contents
 ## Workspace Preparing
 
 - On the directory of `{project_root}/scripts/installation`, via terminal
-	- run `./rename-project.swift "$NEW_PROJECT_NAME"` to change project name.
-	- run `sh install-githooks.sh` to install git-hooks into your project. Includes following git hooks; Git hooks include SwiftLint validation, git message character limitation and issue-id check
-		- pre-commit: This hook provides swiftlint control to detect errors quickly before commit.
-		- commit-msg: This hook checks that messages must have a minimum 50 characters. It also tells it should contain an issue tag. Ticket id must be between square brackets and [ticketid] separated by hyphens. See example: "[ISSUE-123] commit message" or "[JIRA-56] - commit message"
-	
+    - run `./rename-project.swift "$NEW_PROJECT_NAME"` to change project name.
+    - run `sh install-githooks.sh` to install git-hooks into your project. Includes following git hooks; Git hooks include SwiftLint validation, git message character limitation and issue-id check
+        - pre-commit: This hook provides swiftlint control to detect errors quickly before commit.
+        - commit-msg: This hook checks that messages must have a minimum 50 characters. It also tells it should contain an issue tag. Ticket id must be between square brackets and [ticketid] separated by hyphens. See example: "[ISSUE-123] commit message" or "[JIRA-56] - commit message"
+    
 - On your project root via terminal
-	- run `pod install` - this command will regenerate workspace with Xcode.
-		- [pod](https://cocoapods.org/) command & project's dependences.
-	- run `open *.xcw*` - this command will open generated workspace with Xcode.
+    - run `pod install` - this command will regenerate workspace with Xcode.
+        - [pod](https://cocoapods.org/) command & project's dependences.
+    - run `open *.xcw*` - this command will open generated workspace with Xcode.
 
 ## List of Frameworks
 
