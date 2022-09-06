@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import CocoaLumberjack
+import CocoaLumberjackSwift
 
 enum LogLevel: Int, CustomStringConvertible {
 

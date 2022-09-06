@@ -23,7 +23,7 @@ extension UIDevice {
             return identifier + String(UnicodeScalar(UInt8(value)))
         }
 
-        //swiftlint:disable:next cyclomatic_complexity function_body_length
+        // swiftlint:disable:next cyclomatic_complexity function_body_length
         func mapToDevice(identifier: String) -> String {
             switch identifier {
               case "iPhone6,1", "iPhone6,2":
