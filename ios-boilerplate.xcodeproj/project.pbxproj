@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A9F331A4CAAAE20ACCA2871 /* Pods_ios_boilerplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8C2F1F6AA793869F89B9D5 /* Pods_ios_boilerplateTests.framework */; };
 		26BCDA102579826700096894 /* LoggerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BCDA0F2579826700096894 /* LoggerManager.swift */; };
 		26BCDA202579833600096894 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BCDA1F2579833600096894 /* Logger.swift */; };
 		26BCDA252579852700096894 /* LoggingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BCDA242579852700096894 /* LoggingService.swift */; };
@@ -16,6 +17,7 @@
 		26C4C58A25766B6100358DAE /* SwifterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4C58925766B6100358DAE /* SwifterManager.swift */; };
 		26C4C62525769BE400358DAE /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4C62425769BE400358DAE /* Configuration.swift */; };
 		26C4C7012578BFE600358DAE /* sample-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 26C4C7002578BFE600358DAE /* sample-data.json */; };
+		2D944D67A055F2663F343CCB /* Pods_ios_boilerplate_ios_boilerplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1EC6E45F2090643C69D284B /* Pods_ios_boilerplate_ios_boilerplateUITests.framework */; };
 		2F56AE86256E44730007D0A2 /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F56AE85256E44730007D0A2 /* UICollectionViewExtensions.swift */; };
 		2F56AE88256E44A10007D0A2 /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F56AE87256E44A10007D0A2 /* UITableViewCellExtensions.swift */; };
 		2F56AE8A256E44BB0007D0A2 /* UICollectionViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F56AE89256E44BB0007D0A2 /* UICollectionViewCellExtensions.swift */; };
@@ -30,12 +32,12 @@
 		2FCDE0FD2565722400203445 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FCDE0FB2565722400203445 /* Main.storyboard */; };
 		2FCDE0FF2565722600203445 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FCDE0FE2565722600203445 /* Assets.xcassets */; };
 		2FCDE1022565722600203445 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FCDE1002565722600203445 /* LaunchScreen.storyboard */; };
-		2FCDE10D2565722600203445 /* ios_boilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCDE10C2565722600203445 /* ios_boilerplateTests.swift */; };
-		2FCDE1182565722600203445 /* ios_boilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCDE1172565722600203445 /* ios_boilerplateUITests.swift */; };
+		2FCDE10D2565722600203445 /* ios-boilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCDE10C2565722600203445 /* ios-boilerplateTests.swift */; };
+		2FCDE1182565722600203445 /* ios-boilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCDE1172565722600203445 /* ios-boilerplateUITests.swift */; };
 		2FCDE1572566AE2700203445 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCDE1562566AE2700203445 /* UITableViewExtensions.swift */; };
-		818A45ED26FF9C2417D7FE06 /* Pods_ios_boilerplate_ios_boilerplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FFC6E99FDD56F5EA69E71AC /* Pods_ios_boilerplate_ios_boilerplateUITests.framework */; };
-		9307E2FCF7C2B7BD6644CDFF /* Pods_ios_boilerplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A987BEF1B8ECA445BCD5CA /* Pods_ios_boilerplateTests.framework */; };
-		963471DFA2E3991FA7675903 /* Pods_ios_boilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3108CDE6BAAB8A09231F387F /* Pods_ios_boilerplate.framework */; };
+		D182485728C6170D000DF0F0 /* CocoaLumberjackSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D182485628C6170D000DF0F0 /* CocoaLumberjackSwift */; };
+		D182485A28C61728000DF0F0 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = D182485928C61728000DF0F0 /* Swifter */; };
+		FAE5384016289400E487C284 /* Pods_ios_boilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EDEAC707066F0A2AB45ADA7 /* Pods_ios_boilerplate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,27 +86,27 @@
 		2FCDE1012565722600203445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FCDE1032565722600203445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FCDE1082565722600203445 /* ios-boilerplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-boilerplateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FCDE10C2565722600203445 /* ios_boilerplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_boilerplateTests.swift; sourceTree = "<group>"; };
+		2FCDE10C2565722600203445 /* ios-boilerplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ios-boilerplateTests.swift"; sourceTree = "<group>"; };
 		2FCDE10E2565722600203445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FCDE1132565722600203445 /* ios-boilerplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-boilerplateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FCDE1172565722600203445 /* ios_boilerplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_boilerplateUITests.swift; sourceTree = "<group>"; };
+		2FCDE1172565722600203445 /* ios-boilerplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ios-boilerplateUITests.swift"; sourceTree = "<group>"; };
 		2FCDE1192565722600203445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FCDE1292566444C00203445 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		2FCDE134256651EF00203445 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		2FCDE1352566520A00203445 /* AppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore.xcconfig; sourceTree = "<group>"; };
 		2FCDE1562566AE2700203445 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
-		3108CDE6BAAB8A09231F387F /* Pods_ios_boilerplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_boilerplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BBDD0933E5591FF8B818A13 /* Pods-ios-boilerplate.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate.appstore.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate/Pods-ios-boilerplate.appstore.xcconfig"; sourceTree = "<group>"; };
 		5ECE10E56C75EDE88769624B /* Pods-ios-boilerplate-ios-boilerplateUITests.swifter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate-ios-boilerplateUITests.swifter.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests.swifter.xcconfig"; sourceTree = "<group>"; };
 		617AC37E5A08CF641E816634 /* Pods-ios-boilerplate-ios-boilerplateUITests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate-ios-boilerplateUITests.development.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests.development.xcconfig"; sourceTree = "<group>"; };
 		61DB93FE840B22D1A9509174 /* Pods-ios-boilerplateTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplateTests.development.xcconfig"; path = "Target Support Files/Pods-ios-boilerplateTests/Pods-ios-boilerplateTests.development.xcconfig"; sourceTree = "<group>"; };
 		69BF55DFFFB27D42C86D9E3C /* Pods-ios-boilerplateTests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplateTests.appstore.xcconfig"; path = "Target Support Files/Pods-ios-boilerplateTests/Pods-ios-boilerplateTests.appstore.xcconfig"; sourceTree = "<group>"; };
-		77A987BEF1B8ECA445BCD5CA /* Pods_ios_boilerplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_boilerplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FFC6E99FDD56F5EA69E71AC /* Pods_ios_boilerplate_ios_boilerplateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_boilerplate_ios_boilerplateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EDEAC707066F0A2AB45ADA7 /* Pods_ios_boilerplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_boilerplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86334A8CAF04578D366A1FE5 /* Pods-ios-boilerplateTests.swifter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplateTests.swifter.xcconfig"; path = "Target Support Files/Pods-ios-boilerplateTests/Pods-ios-boilerplateTests.swifter.xcconfig"; sourceTree = "<group>"; };
+		8A8C2F1F6AA793869F89B9D5 /* Pods_ios_boilerplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_boilerplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7C2D4E00FC4F37E12BC4C5 /* Pods-ios-boilerplate.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate.development.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate/Pods-ios-boilerplate.development.xcconfig"; sourceTree = "<group>"; };
 		A70E0E8B66C8BC06C83BA3FE /* Pods-ios-boilerplate-ios-boilerplateUITests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate-ios-boilerplateUITests.production.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests.production.xcconfig"; sourceTree = "<group>"; };
 		AF1AB6397F098777F43A19A2 /* Pods-ios-boilerplate.swifter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate.swifter.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate/Pods-ios-boilerplate.swifter.xcconfig"; sourceTree = "<group>"; };
+		E1EC6E45F2090643C69D284B /* Pods_ios_boilerplate_ios_boilerplateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_boilerplate_ios_boilerplateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD55B69392805A736F757003 /* Pods-ios-boilerplate.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate.production.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate/Pods-ios-boilerplate.production.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +115,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				963471DFA2E3991FA7675903 /* Pods_ios_boilerplate.framework in Frameworks */,
+				D182485A28C61728000DF0F0 /* Swifter in Frameworks */,
+				D182485728C6170D000DF0F0 /* CocoaLumberjackSwift in Frameworks */,
+				FAE5384016289400E487C284 /* Pods_ios_boilerplate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9307E2FCF7C2B7BD6644CDFF /* Pods_ios_boilerplateTests.framework in Frameworks */,
+				1A9F331A4CAAAE20ACCA2871 /* Pods_ios_boilerplateTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,7 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				818A45ED26FF9C2417D7FE06 /* Pods_ios_boilerplate_ios_boilerplateUITests.framework in Frameworks */,
+				2D944D67A055F2663F343CCB /* Pods_ios_boilerplate_ios_boilerplateUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,9 +143,9 @@
 		06F0E8E113DCDB5F899D2741 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3108CDE6BAAB8A09231F387F /* Pods_ios_boilerplate.framework */,
-				7FFC6E99FDD56F5EA69E71AC /* Pods_ios_boilerplate_ios_boilerplateUITests.framework */,
-				77A987BEF1B8ECA445BCD5CA /* Pods_ios_boilerplateTests.framework */,
+				6EDEAC707066F0A2AB45ADA7 /* Pods_ios_boilerplate.framework */,
+				E1EC6E45F2090643C69D284B /* Pods_ios_boilerplate_ios_boilerplateUITests.framework */,
+				8A8C2F1F6AA793869F89B9D5 /* Pods_ios_boilerplateTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -237,7 +241,7 @@
 		2FCDE10B2565722600203445 /* ios-boilerplateTests */ = {
 			isa = PBXGroup;
 			children = (
-				2FCDE10C2565722600203445 /* ios_boilerplateTests.swift */,
+				2FCDE10C2565722600203445 /* ios-boilerplateTests.swift */,
 				2FCDE10E2565722600203445 /* Info.plist */,
 			);
 			path = "ios-boilerplateTests";
@@ -246,7 +250,7 @@
 		2FCDE1162565722600203445 /* ios-boilerplateUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2FCDE1172565722600203445 /* ios_boilerplateUITests.swift */,
+				2FCDE1172565722600203445 /* ios-boilerplateUITests.swift */,
 				2FCDE1192565722600203445 /* Info.plist */,
 			);
 			path = "ios-boilerplateUITests";
@@ -339,6 +343,10 @@
 			dependencies = (
 			);
 			name = "ios-boilerplate";
+			packageProductDependencies = (
+				D182485628C6170D000DF0F0 /* CocoaLumberjackSwift */,
+				D182485928C61728000DF0F0 /* Swifter */,
+			);
 			productName = "ios-boilerplate";
 			productReference = 2FCDE0F22565722400203445 /* ios-boilerplate.app */;
 			productType = "com.apple.product-type.application";
@@ -414,6 +422,10 @@
 				Base,
 			);
 			mainGroup = 2FCDE0E92565722400203445;
+			packageReferences = (
+				D182485528C6170D000DF0F0 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */,
+				D182485828C61728000DF0F0 /* XCRemoteSwiftPackageReference "swifter" */,
+			);
 			productRefGroup = 2FCDE0F32565722400203445 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -473,7 +485,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		3CEDA0B120DD58C892D496B9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -606,7 +618,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FCDE10D2565722600203445 /* ios_boilerplateTests.swift in Sources */,
+				2FCDE10D2565722600203445 /* ios-boilerplateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,7 +626,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FCDE1182565722600203445 /* ios_boilerplateUITests.swift in Sources */,
+				2FCDE1182565722600203445 /* ios-boilerplateUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1199,6 +1211,38 @@
 			defaultConfigurationName = AppStore;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D182485528C6170D000DF0F0 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CocoaLumberjack/CocoaLumberjack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		D182485828C61728000DF0F0 /* XCRemoteSwiftPackageReference "swifter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/httpswift/swifter";
+			requirement = {
+				kind = exactVersion;
+				version = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D182485628C6170D000DF0F0 /* CocoaLumberjackSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D182485528C6170D000DF0F0 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjackSwift;
+		};
+		D182485928C61728000DF0F0 /* Swifter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D182485828C61728000DF0F0 /* XCRemoteSwiftPackageReference "swifter" */;
+			productName = Swifter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2FCDE0EA2565722400203445 /* Project object */;
 }
