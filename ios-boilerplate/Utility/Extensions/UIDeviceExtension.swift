@@ -22,8 +22,8 @@ extension UIDevice {
             guard let value = element.value as? Int8, value != 0 else { return identifier }
             return identifier + String(UnicodeScalar(UInt8(value)))
         }
-
-        func mapToDevice(identifier: String) -> String {  // swiftlint:disable:this cyclomatic_complexity function_body_length
+        // swiftlint:disable:next cyclomatic_complexity function_body_length
+        func mapToDevice(identifier: String) -> String {
                     #if os(iOS)
                     switch identifier {
                         case "iPod5,1":
@@ -195,4 +195,5 @@ extension UIDevice {
 
         return mapToDevice(identifier: identifier)
     }()
+    // swiftlint:enable all
 }
