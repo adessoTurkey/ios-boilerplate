@@ -29,7 +29,7 @@ class SwifterManager {
     func startSwifterServer() {
         #if canImport(Swifter)
         swifterServer = HttpServer()
-        if let swifterServer{
+        if let swifterServer {
             swifterServer["/hello"] = { .ok(.htmlBody("You asked for \($0)")) }
             guard let path = Bundle.main.path(forResource: Constants.sampleData, ofType: Constants.fileType ) else { return }
             swifterServer["/sample"] = shareFile(path)
@@ -49,7 +49,7 @@ class SwifterManager {
 
     func stopSwifterServer() {
         #if canImport(Swifter)
-        if let swifterServer{
+        if let swifterServer {
             swifterServer.stop()
         }
         #endif
