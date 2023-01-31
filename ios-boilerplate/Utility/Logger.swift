@@ -104,11 +104,11 @@ final class Logger {
 
     private func shortenFileName(_ fileName: String) -> String {
         var str = String(describing: fileName)
-        if let range = str.range(of: "/", options: .backwards){
+        if let range = str.range(of: "/", options: .backwards) {
             let index = range.upperBound
             str = String(str[index...])
         }
-        if let range = str.range(of: ".", options: .backwards){
+        if let range = str.range(of: ".", options: .backwards) {
             let index = range.upperBound
             str = String(str[..<index])
         }
