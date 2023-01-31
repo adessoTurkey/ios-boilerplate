@@ -24,8 +24,8 @@ class SwifterManager {
     var swifterServer: HttpServer?
     #endif
 
+    // MARK: Swifter
     // swiftlint:disable all
-    //MARK:Swifter
     func startSwifterServer() {
         #if canImport(Swifter)
         swifterServer = HttpServer()
