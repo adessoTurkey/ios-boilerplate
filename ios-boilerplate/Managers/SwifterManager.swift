@@ -49,7 +49,9 @@ class SwifterManager {
 
     func stopSwifterServer() {
         #if canImport(Swifter)
-        swifterServer?.stop()
+        if let swifterServer{
+            swifterServer.stop()
+        }
         #endif
     }
 }
