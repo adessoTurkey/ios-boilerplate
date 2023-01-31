@@ -774,7 +774,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5ECE10E56C75EDE88769624B /* Pods-ios-boilerplate-ios-boilerplateUITests.swifter.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8J8CUXWK9;
 				INFOPLIST_FILE = "ios-boilerplateUITests/Info.plist";
@@ -900,7 +899,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 617AC37E5A08CF641E816634 /* Pods-ios-boilerplate-ios-boilerplateUITests.development.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8J8CUXWK9;
 				INFOPLIST_FILE = "ios-boilerplateUITests/Info.plist";
@@ -1125,7 +1123,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A70E0E8B66C8BC06C83BA3FE /* Pods-ios-boilerplate-ios-boilerplateUITests.production.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8J8CUXWK9;
 				INFOPLIST_FILE = "ios-boilerplateUITests/Info.plist";
@@ -1146,7 +1143,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0E0BED62A6EC7D6FE2A7AAA1 /* Pods-ios-boilerplate-ios-boilerplateUITests.appstore.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8J8CUXWK9;
 				INFOPLIST_FILE = "ios-boilerplateUITests/Info.plist";
