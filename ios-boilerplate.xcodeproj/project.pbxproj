@@ -3,21 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A9F331A4CAAAE20ACCA2871 /* Pods_ios_boilerplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8C2F1F6AA793869F89B9D5 /* Pods_ios_boilerplateTests.framework */; };
 		26BCDA102579826700096894 /* LoggerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BCDA0F2579826700096894 /* LoggerManager.swift */; };
 		26BCDA202579833600096894 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BCDA1F2579833600096894 /* Logger.swift */; };
 		26BCDA252579852700096894 /* LoggingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BCDA242579852700096894 /* LoggingService.swift */; };
 		26BCDA2A2579857E00096894 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BCDA292579857E00096894 /* UIApplicationExtension.swift */; };
 		26BCDA2F2579859500096894 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BCDA2E2579859500096894 /* UIDeviceExtension.swift */; };
-		26C4C565257651F500358DAE /* SwifterServerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4C564257651F500358DAE /* SwifterServerService.swift */; };
-		26C4C58A25766B6100358DAE /* SwifterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4C58925766B6100358DAE /* SwifterManager.swift */; };
 		26C4C62525769BE400358DAE /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4C62425769BE400358DAE /* Configuration.swift */; };
 		26C4C7012578BFE600358DAE /* sample-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 26C4C7002578BFE600358DAE /* sample-data.json */; };
-		2D944D67A055F2663F343CCB /* Pods_ios_boilerplate_ios_boilerplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1EC6E45F2090643C69D284B /* Pods_ios_boilerplate_ios_boilerplateUITests.framework */; };
 		2F56AE86256E44730007D0A2 /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F56AE85256E44730007D0A2 /* UICollectionViewExtensions.swift */; };
 		2F56AE88256E44A10007D0A2 /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F56AE87256E44A10007D0A2 /* UITableViewCellExtensions.swift */; };
 		2F56AE8A256E44BB0007D0A2 /* UICollectionViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F56AE89256E44BB0007D0A2 /* UICollectionViewCellExtensions.swift */; };
@@ -35,9 +31,9 @@
 		2FCDE10D2565722600203445 /* ios-boilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCDE10C2565722600203445 /* ios-boilerplateTests.swift */; };
 		2FCDE1182565722600203445 /* ios-boilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCDE1172565722600203445 /* ios-boilerplateUITests.swift */; };
 		2FCDE1572566AE2700203445 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCDE1562566AE2700203445 /* UITableViewExtensions.swift */; };
+		721461EB299CF0F100570894 /* Pulse in Frameworks */ = {isa = PBXBuildFile; productRef = 721461EA299CF0F100570894 /* Pulse */; };
+		721461ED299CF0F100570894 /* PulseUI in Frameworks */ = {isa = PBXBuildFile; productRef = 721461EC299CF0F100570894 /* PulseUI */; };
 		D182485728C6170D000DF0F0 /* CocoaLumberjackSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D182485628C6170D000DF0F0 /* CocoaLumberjackSwift */; };
-		D182485A28C61728000DF0F0 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = D182485928C61728000DF0F0 /* Swifter */; };
-		FAE5384016289400E487C284 /* Pods_ios_boilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EDEAC707066F0A2AB45ADA7 /* Pods_ios_boilerplate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,15 +54,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		038895AE68B1731C6E7264B1 /* Pods-ios-boilerplateTests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplateTests.production.xcconfig"; path = "Target Support Files/Pods-ios-boilerplateTests/Pods-ios-boilerplateTests.production.xcconfig"; sourceTree = "<group>"; };
-		0E0BED62A6EC7D6FE2A7AAA1 /* Pods-ios-boilerplate-ios-boilerplateUITests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate-ios-boilerplateUITests.appstore.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests.appstore.xcconfig"; sourceTree = "<group>"; };
 		26BCDA0F2579826700096894 /* LoggerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerManager.swift; sourceTree = "<group>"; };
 		26BCDA1F2579833600096894 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		26BCDA242579852700096894 /* LoggingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingService.swift; sourceTree = "<group>"; };
 		26BCDA292579857E00096894 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
 		26BCDA2E2579859500096894 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
-		26C4C564257651F500358DAE /* SwifterServerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterServerService.swift; sourceTree = "<group>"; };
-		26C4C58925766B6100358DAE /* SwifterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterManager.swift; sourceTree = "<group>"; };
 		26C4C62425769BE400358DAE /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		26C4C7002578BFE600358DAE /* sample-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sample-data.json"; sourceTree = "<group>"; };
 		2F56AE85256E44730007D0A2 /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
@@ -95,19 +87,6 @@
 		2FCDE134256651EF00203445 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		2FCDE1352566520A00203445 /* AppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore.xcconfig; sourceTree = "<group>"; };
 		2FCDE1562566AE2700203445 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
-		5BBDD0933E5591FF8B818A13 /* Pods-ios-boilerplate.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate.appstore.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate/Pods-ios-boilerplate.appstore.xcconfig"; sourceTree = "<group>"; };
-		5ECE10E56C75EDE88769624B /* Pods-ios-boilerplate-ios-boilerplateUITests.swifter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate-ios-boilerplateUITests.swifter.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests.swifter.xcconfig"; sourceTree = "<group>"; };
-		617AC37E5A08CF641E816634 /* Pods-ios-boilerplate-ios-boilerplateUITests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate-ios-boilerplateUITests.development.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests.development.xcconfig"; sourceTree = "<group>"; };
-		61DB93FE840B22D1A9509174 /* Pods-ios-boilerplateTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplateTests.development.xcconfig"; path = "Target Support Files/Pods-ios-boilerplateTests/Pods-ios-boilerplateTests.development.xcconfig"; sourceTree = "<group>"; };
-		69BF55DFFFB27D42C86D9E3C /* Pods-ios-boilerplateTests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplateTests.appstore.xcconfig"; path = "Target Support Files/Pods-ios-boilerplateTests/Pods-ios-boilerplateTests.appstore.xcconfig"; sourceTree = "<group>"; };
-		6EDEAC707066F0A2AB45ADA7 /* Pods_ios_boilerplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_boilerplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		86334A8CAF04578D366A1FE5 /* Pods-ios-boilerplateTests.swifter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplateTests.swifter.xcconfig"; path = "Target Support Files/Pods-ios-boilerplateTests/Pods-ios-boilerplateTests.swifter.xcconfig"; sourceTree = "<group>"; };
-		8A8C2F1F6AA793869F89B9D5 /* Pods_ios_boilerplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_boilerplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F7C2D4E00FC4F37E12BC4C5 /* Pods-ios-boilerplate.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate.development.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate/Pods-ios-boilerplate.development.xcconfig"; sourceTree = "<group>"; };
-		A70E0E8B66C8BC06C83BA3FE /* Pods-ios-boilerplate-ios-boilerplateUITests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate-ios-boilerplateUITests.production.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests.production.xcconfig"; sourceTree = "<group>"; };
-		AF1AB6397F098777F43A19A2 /* Pods-ios-boilerplate.swifter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate.swifter.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate/Pods-ios-boilerplate.swifter.xcconfig"; sourceTree = "<group>"; };
-		E1EC6E45F2090643C69D284B /* Pods_ios_boilerplate_ios_boilerplateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_boilerplate_ios_boilerplateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD55B69392805A736F757003 /* Pods-ios-boilerplate.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate.production.xcconfig"; path = "Target Support Files/Pods-ios-boilerplate/Pods-ios-boilerplate.production.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +94,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D182485A28C61728000DF0F0 /* Swifter in Frameworks */,
+				721461ED299CF0F100570894 /* PulseUI in Frameworks */,
+				721461EB299CF0F100570894 /* Pulse in Frameworks */,
 				D182485728C6170D000DF0F0 /* CocoaLumberjackSwift in Frameworks */,
-				FAE5384016289400E487C284 /* Pods_ios_boilerplate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +104,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A9F331A4CAAAE20ACCA2871 /* Pods_ios_boilerplateTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,42 +111,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D944D67A055F2663F343CCB /* Pods_ios_boilerplate_ios_boilerplateUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06F0E8E113DCDB5F899D2741 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6EDEAC707066F0A2AB45ADA7 /* Pods_ios_boilerplate.framework */,
-				E1EC6E45F2090643C69D284B /* Pods_ios_boilerplate_ios_boilerplateUITests.framework */,
-				8A8C2F1F6AA793869F89B9D5 /* Pods_ios_boilerplateTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		08C81C6F027E6BE0E71341DC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FD55B69392805A736F757003 /* Pods-ios-boilerplate.production.xcconfig */,
-				8F7C2D4E00FC4F37E12BC4C5 /* Pods-ios-boilerplate.development.xcconfig */,
-				5BBDD0933E5591FF8B818A13 /* Pods-ios-boilerplate.appstore.xcconfig */,
-				A70E0E8B66C8BC06C83BA3FE /* Pods-ios-boilerplate-ios-boilerplateUITests.production.xcconfig */,
-				617AC37E5A08CF641E816634 /* Pods-ios-boilerplate-ios-boilerplateUITests.development.xcconfig */,
-				0E0BED62A6EC7D6FE2A7AAA1 /* Pods-ios-boilerplate-ios-boilerplateUITests.appstore.xcconfig */,
-				038895AE68B1731C6E7264B1 /* Pods-ios-boilerplateTests.production.xcconfig */,
-				61DB93FE840B22D1A9509174 /* Pods-ios-boilerplateTests.development.xcconfig */,
-				69BF55DFFFB27D42C86D9E3C /* Pods-ios-boilerplateTests.appstore.xcconfig */,
-				AF1AB6397F098777F43A19A2 /* Pods-ios-boilerplate.swifter.xcconfig */,
-				5ECE10E56C75EDE88769624B /* Pods-ios-boilerplate-ios-boilerplateUITests.swifter.xcconfig */,
-				86334A8CAF04578D366A1FE5 /* Pods-ios-boilerplateTests.swifter.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		26BCDA36257A398600096894 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,7 +127,6 @@
 		26C4C5632576519000358DAE /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				26C4C564257651F500358DAE /* SwifterServerService.swift */,
 				26BCDA242579852700096894 /* LoggingService.swift */,
 			);
 			path = Services;
@@ -188,7 +135,6 @@
 		26C4C58825766B4400358DAE /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				26C4C58925766B6100358DAE /* SwifterManager.swift */,
 				26BCDA0F2579826700096894 /* LoggerManager.swift */,
 			);
 			path = Managers;
@@ -209,8 +155,6 @@
 				2FCDE10B2565722600203445 /* ios-boilerplateTests */,
 				2FCDE1162565722600203445 /* ios-boilerplateUITests */,
 				2FCDE0F32565722400203445 /* Products */,
-				08C81C6F027E6BE0E71341DC /* Pods */,
-				06F0E8E113DCDB5F899D2741 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -331,12 +275,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FCDE11C2565722600203445 /* Build configuration list for PBXNativeTarget "ios-boilerplate" */;
 			buildPhases = (
-				A2ABD0793CF331A0702F696F /* [CP] Check Pods Manifest.lock */,
 				2FCDE0EE2565722400203445 /* Sources */,
 				2FCDE0EF2565722400203445 /* Frameworks */,
 				2FCDE0F02565722400203445 /* Resources */,
 				26C4C4452575230A00358DAE /* Swiftlint */,
-				3CEDA0B120DD58C892D496B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -345,7 +287,8 @@
 			name = "ios-boilerplate";
 			packageProductDependencies = (
 				D182485628C6170D000DF0F0 /* CocoaLumberjackSwift */,
-				D182485928C61728000DF0F0 /* Swifter */,
+				721461EA299CF0F100570894 /* Pulse */,
+				721461EC299CF0F100570894 /* PulseUI */,
 			);
 			productName = "ios-boilerplate";
 			productReference = 2FCDE0F22565722400203445 /* ios-boilerplate.app */;
@@ -355,7 +298,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FCDE11F2565722600203445 /* Build configuration list for PBXNativeTarget "ios-boilerplateTests" */;
 			buildPhases = (
-				682112BD1D32356E32B0D558 /* [CP] Check Pods Manifest.lock */,
 				2FCDE1042565722600203445 /* Sources */,
 				2FCDE1052565722600203445 /* Frameworks */,
 				2FCDE1062565722600203445 /* Resources */,
@@ -374,11 +316,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FCDE1222565722600203445 /* Build configuration list for PBXNativeTarget "ios-boilerplateUITests" */;
 			buildPhases = (
-				EB2EECDEA27518CB9774A14A /* [CP] Check Pods Manifest.lock */,
 				2FCDE10F2565722600203445 /* Sources */,
 				2FCDE1102565722600203445 /* Frameworks */,
 				2FCDE1112565722600203445 /* Resources */,
-				E3291048690177CBFDC3248D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -424,7 +364,7 @@
 			mainGroup = 2FCDE0E92565722400203445;
 			packageReferences = (
 				D182485528C6170D000DF0F0 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */,
-				D182485828C61728000DF0F0 /* XCRemoteSwiftPackageReference "swifter" */,
+				721461E9299CF0F100570894 /* XCRemoteSwiftPackageReference "Pulse" */,
 			);
 			productRefGroup = 2FCDE0F32565722400203445 /* Products */;
 			projectDirPath = "";
@@ -471,6 +411,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		26C4C4452575230A00358DAE /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -487,106 +428,6 @@
 			shellPath = /bin/sh;
 			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
-		3CEDA0B120DD58C892D496B9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ios-boilerplate/Pods-ios-boilerplate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ios-boilerplate/Pods-ios-boilerplate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-boilerplate/Pods-ios-boilerplate-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		682112BD1D32356E32B0D558 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ios-boilerplateTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A2ABD0793CF331A0702F696F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ios-boilerplate-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E3291048690177CBFDC3248D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-boilerplate-ios-boilerplateUITests/Pods-ios-boilerplate-ios-boilerplateUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EB2EECDEA27518CB9774A14A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ios-boilerplate-ios-boilerplateUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -595,7 +436,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F56AE8C256E44F00007D0A2 /* UIViewControllerExtensions.swift in Sources */,
-				26C4C565257651F500358DAE /* SwifterServerService.swift in Sources */,
 				2F56AE86256E44730007D0A2 /* UICollectionViewExtensions.swift in Sources */,
 				2FCDE0FA2565722400203445 /* ViewController.swift in Sources */,
 				2F56AE8E256E487F0007D0A2 /* StringExtensions.swift in Sources */,
@@ -605,7 +445,6 @@
 				2FCDE0F62565722400203445 /* AppDelegate.swift in Sources */,
 				26BCDA252579852700096894 /* LoggingService.swift in Sources */,
 				26BCDA102579826700096894 /* LoggerManager.swift in Sources */,
-				26C4C58A25766B6100358DAE /* SwifterManager.swift in Sources */,
 				2FCDE0F82565722400203445 /* SceneDelegate.swift in Sources */,
 				26BCDA202579833600096894 /* Logger.swift in Sources */,
 				2FCDE1572566AE2700203445 /* UITableViewExtensions.swift in Sources */,
@@ -665,132 +504,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		26BCD9F1257920D700096894 /* Swifter */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FCDE1292566444C00203445 /* Development.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER)";
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Swifter;
-		};
-		26BCD9F2257920D700096894 /* Swifter */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF1AB6397F098777F43A19A2 /* Pods-ios-boilerplate.swifter.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K8J8CUXWK9;
-				INFOPLIST_FILE = "ios-boilerplate/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Swifter;
-		};
-		26BCD9F3257920D700096894 /* Swifter */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86334A8CAF04578D366A1FE5 /* Pods-ios-boilerplateTests.swifter.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K8J8CUXWK9;
-				INFOPLIST_FILE = "ios-boilerplateTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adesso.ios-boilerplateTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-boilerplate.app/ios-boilerplate";
-			};
-			name = Swifter;
-		};
-		26BCD9F4257920D700096894 /* Swifter */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5ECE10E56C75EDE88769624B /* Pods-ios-boilerplate-ios-boilerplateUITests.swifter.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K8J8CUXWK9;
-				INFOPLIST_FILE = "ios-boilerplateUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adesso.ios-boilerplateUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "ios-boilerplate";
-			};
-			name = Swifter;
-		};
 		2F56AE97256E68000007D0A2 /* Development */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2FCDE1292566444C00203445 /* Development.xcconfig */;
@@ -850,12 +563,12 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Development;
 		};
 		2F56AE98256E68000007D0A2 /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F7C2D4E00FC4F37E12BC4C5 /* Pods-ios-boilerplate.development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -875,7 +588,6 @@
 		};
 		2F56AE99256E68000007D0A2 /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61DB93FE840B22D1A9509174 /* Pods-ios-boilerplateTests.development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -898,9 +610,7 @@
 		};
 		2F56AE9A256E68000007D0A2 /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 617AC37E5A08CF641E816634 /* Pods-ios-boilerplate-ios-boilerplateUITests.development.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8J8CUXWK9;
 				INFOPLIST_FILE = "ios-boilerplateUITests/Info.plist";
@@ -976,6 +686,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Production;
 		};
@@ -1031,13 +742,13 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = AppStore;
 		};
 		2FCDE11D2565722600203445 /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD55B69392805A736F757003 /* Pods-ios-boilerplate.production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1057,7 +768,6 @@
 		};
 		2FCDE11E2565722600203445 /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BBDD0933E5591FF8B818A13 /* Pods-ios-boilerplate.appstore.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1077,7 +787,6 @@
 		};
 		2FCDE1202565722600203445 /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 038895AE68B1731C6E7264B1 /* Pods-ios-boilerplateTests.production.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1100,7 +809,6 @@
 		};
 		2FCDE1212565722600203445 /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69BF55DFFFB27D42C86D9E3C /* Pods-ios-boilerplateTests.appstore.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1123,9 +831,7 @@
 		};
 		2FCDE1232565722600203445 /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A70E0E8B66C8BC06C83BA3FE /* Pods-ios-boilerplate-ios-boilerplateUITests.production.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8J8CUXWK9;
 				INFOPLIST_FILE = "ios-boilerplateUITests/Info.plist";
@@ -1144,9 +850,7 @@
 		};
 		2FCDE1242565722600203445 /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E0BED62A6EC7D6FE2A7AAA1 /* Pods-ios-boilerplate-ios-boilerplateUITests.appstore.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8J8CUXWK9;
 				INFOPLIST_FILE = "ios-boilerplateUITests/Info.plist";
@@ -1170,7 +874,6 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F56AE97256E68000007D0A2 /* Development */,
-				26BCD9F1257920D700096894 /* Swifter */,
 				2FCDE11A2565722600203445 /* Production */,
 				2FCDE11B2565722600203445 /* AppStore */,
 			);
@@ -1181,7 +884,6 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F56AE98256E68000007D0A2 /* Development */,
-				26BCD9F2257920D700096894 /* Swifter */,
 				2FCDE11D2565722600203445 /* Production */,
 				2FCDE11E2565722600203445 /* AppStore */,
 			);
@@ -1192,7 +894,6 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F56AE99256E68000007D0A2 /* Development */,
-				26BCD9F3257920D700096894 /* Swifter */,
 				2FCDE1202565722600203445 /* Production */,
 				2FCDE1212565722600203445 /* AppStore */,
 			);
@@ -1203,7 +904,6 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F56AE9A256E68000007D0A2 /* Development */,
-				26BCD9F4257920D700096894 /* Swifter */,
 				2FCDE1232565722600203445 /* Production */,
 				2FCDE1242565722600203445 /* AppStore */,
 			);
@@ -1213,6 +913,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		721461E9299CF0F100570894 /* XCRemoteSwiftPackageReference "Pulse" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Pulse";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		D182485528C6170D000DF0F0 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/CocoaLumberjack/CocoaLumberjack";
@@ -1221,26 +929,23 @@
 				minimumVersion = 3.0.0;
 			};
 		};
-		D182485828C61728000DF0F0 /* XCRemoteSwiftPackageReference "swifter" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/httpswift/swifter";
-			requirement = {
-				kind = exactVersion;
-				version = 1.5.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		721461EA299CF0F100570894 /* Pulse */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 721461E9299CF0F100570894 /* XCRemoteSwiftPackageReference "Pulse" */;
+			productName = Pulse;
+		};
+		721461EC299CF0F100570894 /* PulseUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 721461E9299CF0F100570894 /* XCRemoteSwiftPackageReference "Pulse" */;
+			productName = PulseUI;
+		};
 		D182485628C6170D000DF0F0 /* CocoaLumberjackSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D182485528C6170D000DF0F0 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
 			productName = CocoaLumberjackSwift;
-		};
-		D182485928C61728000DF0F0 /* Swifter */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D182485828C61728000DF0F0 /* XCRemoteSwiftPackageReference "swifter" */;
-			productName = Swifter;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

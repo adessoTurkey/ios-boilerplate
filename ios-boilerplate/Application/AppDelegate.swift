@@ -11,25 +11,13 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    lazy private var services: [UIApplicationDelegate] = {
-            var list: [UIApplicationDelegate] = [LoggingService()]
-            #if canImport(Swifter)
-            list.append(SwifterServerService())
-            #endif
-            return list
-    }()
+    lazy private var services: [UIApplicationDelegate] = [LoggingService()]
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return services.allSatisfy { service -> Bool in
             service.application?(application, didFinishLaunchingWithOptions: launchOptions) ?? true
         }
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        #if canImport(Swifter)
-        SwifterManager.instance.stopSwifterServer()
-        #endif
     }
 
     // MARK: UISceneSession Lifecycle
