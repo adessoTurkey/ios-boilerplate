@@ -14,10 +14,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: |
-          pod install --repo-update
-        shell: bash
       - name: Build
         run: |
           xcodebuild -workspace ios-boilerplate.xcworkspace -scheme ios-boilerplate clean build -sdk iphoneos -configuration Development CODE_SIGNING_ALLOWED=No          
