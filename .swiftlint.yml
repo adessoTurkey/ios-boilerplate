@@ -99,7 +99,7 @@ identifier_name:
 nesting:
   type_level:
     warning: 2
-  statement_level:
+  function_level:
     warning: 3
 
 switch_case_alignment:
