@@ -33,6 +33,7 @@
 		2FCDE1572566AE2700203445 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCDE1562566AE2700203445 /* UITableViewExtensions.swift */; };
 		721461EB299CF0F100570894 /* Pulse in Frameworks */ = {isa = PBXBuildFile; productRef = 721461EA299CF0F100570894 /* Pulse */; };
 		721461ED299CF0F100570894 /* PulseUI in Frameworks */ = {isa = PBXBuildFile; productRef = 721461EC299CF0F100570894 /* PulseUI */; };
+		72B0FD3F29E405250047935B /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B0FD3E29E405250047935B /* ArrayExtensions.swift */; };
 		D182485728C6170D000DF0F0 /* CocoaLumberjackSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D182485628C6170D000DF0F0 /* CocoaLumberjackSwift */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		2FCDE134256651EF00203445 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		2FCDE1352566520A00203445 /* AppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore.xcconfig; sourceTree = "<group>"; };
 		2FCDE1562566AE2700203445 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		72B0FD3E29E405250047935B /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				2FCDE1562566AE2700203445 /* UITableViewExtensions.swift */,
+				72B0FD3E29E405250047935B /* ArrayExtensions.swift */,
 				2F56AE87256E44A10007D0A2 /* UITableViewCellExtensions.swift */,
 				2F56AE85256E44730007D0A2 /* UICollectionViewExtensions.swift */,
 				2F56AE89256E44BB0007D0A2 /* UICollectionViewCellExtensions.swift */,
@@ -450,6 +453,7 @@
 				2FCDE1572566AE2700203445 /* UITableViewExtensions.swift in Sources */,
 				2F56AE88256E44A10007D0A2 /* UITableViewCellExtensions.swift in Sources */,
 				26BCDA2F2579859500096894 /* UIDeviceExtension.swift in Sources */,
+				72B0FD3F29E405250047935B /* ArrayExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
