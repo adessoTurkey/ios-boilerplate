@@ -32,7 +32,6 @@ large_tuple: # warn user when using 3 values in tuple, give error if there are 4
    - 4
 
 opt_in_rules:
-  - anyobject_protocol
   - closure_spacing
   - conditional_returns_on_newline
   - duplicate_imports
@@ -51,9 +50,6 @@ opt_in_rules:
   - colon
   - comma
    
-anyobject_protocol:
-  severity: error
-
 
 conditional_returns_on_newline:
   severity: error
@@ -92,7 +88,6 @@ identifier_name:
   max_length:
     warning: 40
     error: 64
-  validates_start_with_lowercase: true
   excluded:
     - id
 
@@ -114,7 +109,6 @@ type_name:
     warning: 3
   max_length:
     warning: 1000
-  validates_start_with_lowercase: true
   excluded:
     - "ID"
     - "Id"
