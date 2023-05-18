@@ -55,10 +55,6 @@ conditional_returns_on_newline:
   severity: error
   if_only: true
 
-cyclomatic_complexity:
-  - warning: 10
-  - error: 20
-  - ignores_case_statements: true
 
 discouraged_direct_init:
   severity: error
