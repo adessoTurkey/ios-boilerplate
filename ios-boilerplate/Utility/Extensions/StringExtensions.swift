@@ -12,7 +12,6 @@ extension String {
     var localized: String {
         NSLocalizedString(self, comment: "") // swiftlint:disable:this nslocalizedstring_key
     }
-    // swiftlint:enable all
 
     static var empty: Self {
         ""

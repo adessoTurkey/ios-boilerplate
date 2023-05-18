@@ -195,5 +195,4 @@ extension UIDevice {
 
         return mapToDevice(identifier: identifier)
     }()
-    // swiftlint:enable all
 }
