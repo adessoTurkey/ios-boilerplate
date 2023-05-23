@@ -22,7 +22,7 @@ extension UIDevice {
             guard let value = element.value as? Int8, value != 0 else { return identifier }
             return identifier + String(UnicodeScalar(UInt8(value)))
         }
-        // swiftlint:disable:next cyclomatic_complexity function_body_length
+        // swiftlint:disable:next function_body_length
         func mapToDevice(identifier: String) -> String {
                     #if os(iOS)
                     switch identifier {
